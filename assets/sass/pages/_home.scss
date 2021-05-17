@@ -1,4 +1,6 @@
 #section-1 {
+  margin-left: 23px;
+  margin-right: 23px;
   margin-bottom: 126px;
   z-index: 5;
 }
@@ -81,7 +83,8 @@
 // End of section-1 ----------------------//
 
 #section-2 {
-  padding: auto 23px;
+  margin-left: 23px;
+  margin-right: 23px;
   .img-bg-shape {
     background-size: contain;
     background-repeat: no-repeat;
@@ -91,7 +94,7 @@
   }
   .sc-2__card {
     margin: 0 auto;
-    max-width: 370px;
+    max-width: 329px;
     position: relative;
     padding: 48px;
     background-color: #fff;
@@ -122,6 +125,12 @@
     a {
       color: rgba(51, 51, 51, 1);
       line-height: 2rem;
+    }
+
+    @media screen and (min-width: 576px) {
+      .sc-2__card {
+        max-width: 370px;
+      }
     }
   }
 }
@@ -281,6 +290,9 @@
 }
 
 #section-4 {
+  margin-left: 23px;
+  margin-right: 23px;
+
   @media screen and (min-width: 576px) {
     .heading-3 {
       font-size: 3.5rem;
@@ -307,6 +319,8 @@
 }
 
 #section-5 {
+  margin-left: 23px;
+  margin-right: 23px;
   margin-bottom: 14.0625rem;
 
   .about__company__name {
@@ -314,7 +328,7 @@
   }
 
   .about__image {
-    max-width: 402px;
+    max-width: 325px;
     object-fit: cover;
   }
 

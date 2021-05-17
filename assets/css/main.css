@@ -823,6 +823,8 @@ header span {
 }
 
 #section-1 {
+  margin-left: 23px;
+  margin-right: 23px;
   margin-bottom: 126px;
   z-index: 5;
 }
@@ -916,7 +918,8 @@ header span {
 }
 
 #section-2 {
-  padding: auto 23px;
+  margin-left: 23px;
+  margin-right: 23px;
 }
 
 #section-2 .img-bg-shape {
@@ -929,7 +932,7 @@ header span {
 
 #section-2 .sc-2__card {
   margin: 0 auto;
-  max-width: 370px;
+  max-width: 329px;
   position: relative;
   padding: 48px;
   background-color: #fff;
@@ -961,6 +964,12 @@ header span {
 #section-2 .sc-2__card a {
   color: #333333;
   line-height: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  #section-2 .sc-2__card .sc-2__card {
+    max-width: 370px;
+  }
 }
 
 #section-3 .column {
@@ -1132,6 +1141,11 @@ header span {
   }
 }
 
+#section-4 {
+  margin-left: 23px;
+  margin-right: 23px;
+}
+
 @media screen and (min-width: 576px) {
   #section-4 .heading-3 {
     font-size: 3.5rem;
@@ -1157,6 +1171,8 @@ header span {
 }
 
 #section-5 {
+  margin-left: 23px;
+  margin-right: 23px;
   margin-bottom: 14.0625rem;
 }
 
@@ -1165,7 +1181,7 @@ header span {
 }
 
 #section-5 .about__image {
-  max-width: 402px;
+  max-width: 325px;
   -o-object-fit: cover;
      object-fit: cover;
 }

@@ -1,0 +1,110 @@
+.btn {
+  vertical-align: middle;
+  color: $color-white;
+  line-height: 32px;
+  border-radius: 0.6rem;
+
+  & i {
+    color: $color-white;
+  }
+}
+
+.btn-l {
+  padding: 1.2rem 2.075rem;
+}
+
+.btn-m {
+  padding: 0.6rem 1.7rem;
+}
+
+.btn-s {
+  padding: 0.4rem 1.275rem;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.btn-secondary {
+  background-color: $color-gray-light;
+  color: $color-text;
+}
+
+.btn-disabled {
+  background-color: $color-gray-medium;
+  color: $color-gray-dark;
+  cursor: not-allowed;
+}
+
+.btn-default {
+  background-color: $color-gray-light;
+  color: $color-text;
+}
+
+.btn-default:hover {
+  background-color: $color-gray-dark;
+  color: $color-white;
+}
+
+.btn-success {
+  background-color: $color-green;
+}
+
+.btn-warning {
+  background-color: $color-orange;
+}
+
+.btn-error {
+  background-color: $color-red;
+}
+
+.btn-icon--left {
+  // padding: 0.8rem 1.6rem 0.8rem 1.7rem;
+
+  & i {
+    color: $color-white;
+    margin-right: 0.6rem;
+  }
+}
+
+.btn-icon--right {
+  // padding: 0.8rem 1.7rem 0.8rem 1.6rem;
+
+  & i {
+    text-align: right;
+    color: $color-white;
+    margin-left: 0.6rem;
+  }
+}
+
+.btn-icon--only {
+  text-align: center;
+
+  & i {
+    line-height: 24px;
+    width: fit-content;
+  }
+}
+
+.btn-border-outline-circle a,
+.btn-border-solid-circle a {
+  margin-left: 0;
+}
+
+.btn-border-solid-circle {
+  margin-right: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #252525;
+  background-color: #a89999;
+}
+
+.btn-border-outline-circle {
+  margin-right: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #252525;
+}

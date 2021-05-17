@@ -1,0 +1,68 @@
+body {
+  font-family: $MAIN-FONT;
+}
+
+.heading-1 {
+  font-size: 4.5rem;
+  line-height: 5rem;
+  font-weight: 700;
+}
+
+.heading-2 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+
+.heading-3 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.heading-4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.heading-5 {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: rgba(226, 179, 88, 1);
+}
+
+label {
+  font-size: 0.75rem;
+  line-height: 0.8625rem;
+  font-weight: 700;
+}
+
+.text_big {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+.text__gray {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.text__gray-small {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.5);
+}

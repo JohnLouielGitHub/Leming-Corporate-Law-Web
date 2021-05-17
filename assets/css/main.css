@@ -1044,19 +1044,19 @@ header span {
 }
 
 #section-3 .service-card .image-1 {
-  background-image: url(/assets/img/service-corporate-card.png);
+  background-image: url(./assets/img/service-corporate-card.png);
 }
 
 #section-3 .service-card .image-2 {
-  background-image: url(/assets/img/service-data-privacy-card.png);
+  background-image: url(./assets/img/service-data-privacy-card.png);
 }
 
 #section-3 .service-card .image-3 {
-  background-image: url(/assets/img/service-employment-card.png);
+  background-image: url(./assets/img/service-employment-card.png);
 }
 
 #section-3 .service-card .image-4 {
-  background-image: url(/assets/img/service-intellectual-card.png);
+  background-image: url(./assets/img/service-intellectual-card.png);
 }
 
 @media screen and (min-width: 1200px) {

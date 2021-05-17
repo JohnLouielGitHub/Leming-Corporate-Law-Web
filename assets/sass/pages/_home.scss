@@ -1,3 +1,8 @@
+input,
+textarea {
+  outline: 0;
+}
+
 #section-1 {
   margin-left: 23px;
   margin-right: 23px;
@@ -203,18 +208,6 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-    }
-    .image-1 {
-      background-image: url(./assets/img/service-corporate-card.png);
-    }
-    .image-2 {
-      background-image: url(./assets/img/service-data-privacy-card.png);
-    }
-    .image-3 {
-      background-image: url(./assets/img/service-employment-card.png);
-    }
-    .image-4 {
-      background-image: url(./assets/img/service-intellectual-card.png);
     }
   }
 
@@ -476,8 +469,8 @@
 }
 
 #section-8 {
-  margin-right: 23px;
   margin-left: 23px;
+  margin-right: 23px;
 
   .testimonials-image {
     max-width: 330px;
@@ -495,6 +488,7 @@
 
   .testimonials__profile {
     align-items: center;
+    margin-bottom: 128px;
   }
 
   .testimonials__profile-picture {
@@ -531,6 +525,214 @@
     }
     .testimonials__profile-social {
       color: #33333380;
+    }
+  }
+}
+
+#section-9 {
+  margin-left: 23px;
+  margin-right: 23px;
+
+  .container {
+    box-shadow: 3px 2px 22px 2px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 3px 2px 22px 2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 3px 2px 22px 2px rgba(0, 0, 0, 1);
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 7px 7px 9px 24px;
+    border: 1px solid #dadada;
+    border-radius: 0.5rem;
+  }
+  .bg-color-1 {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .bg-color-2 {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .consultation-form {
+    padding-top: 3.5rem;
+  }
+
+  .consultation__head {
+    margin-bottom: 1.1875rem;
+  }
+
+  .consultation__sub-head {
+    margin-bottom: 1.75rem;
+  }
+
+  .consultation__contact {
+    padding-top: 4.75rem;
+    padding-bottom: 5.3125rem;
+  }
+
+  .consultation__news-letter {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+    .d-flex {
+      display: block;
+    }
+  }
+
+  .consultation-form,
+  .consultation__contact-information-mobile,
+  .consultation__contact-information-mail,
+  .consultation__news-letter {
+    padding-left: 28px;
+    padding-right: 28px;
+
+    .consultation-name {
+      margin-bottom: 1.0625rem;
+    }
+
+    .consultation-email {
+      margin-bottom: 1rem;
+    }
+
+    textarea {
+      margin-bottom: 1rem;
+      height: 96px;
+    }
+
+    .consultation-btn {
+      margin-bottom: 4rem;
+    }
+
+    .icon {
+      margin-right: 1rem;
+    }
+
+    .shape {
+      padding: 12px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #333333;
+      object-fit: contain;
+    }
+
+    .consultation-information-mobile {
+      margin-bottom: 2.5rem;
+
+      .consultation__phone-number {
+        margin-bottom: 1.1875rem;
+      }
+    }
+
+    .consultation__contact-information-mail {
+      margin-bottom: 5.3125rem;
+
+      .consultation__email {
+        margin-bottom: 1px;
+      }
+    }
+
+    .consultation__newsletter-head {
+      color: $color-white;
+      margin-bottom: 1.75rem;
+    }
+
+    .consultation__news-letter {
+      margin-bottom: 1.75rem;
+    }
+
+    .newsletter-email {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .newsletter-btn {
+      padding: 1rem 2.0625rem 1rem 2.0625rem;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    .bg-color-1 {
+      border-top-left-radius: 0;
+      border-top-right-radius: 1rem;
+    }
+
+    .bg-color-2 {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 1rem;
+    }
+    .bg-solid-color {
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+
+    .consultation-form {
+      padding-top: 4.6875rem;
+      margin-bottom: 80px;
+    }
+
+    .consultation__sub-head {
+      margin-bottom: 2.3125rem;
+    }
+
+    .consultation-name {
+      margin-bottom: 1.0625rem;
+    }
+
+    .consultation-email {
+      margin-bottom: 1rem;
+    }
+
+    textarea {
+      margin-bottom: 1rem;
+      height: 96px;
+    }
+
+    .consultation-btn {
+      margin-bottom: 4rem;
+    }
+
+    .consultation-form,
+    .consultation__contact-information-mobile,
+    .consultation__contact-information-mail,
+    .consultation__news-letter {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    .newsletter-email {
+      max-width: 302px;
+      margin-right: 1.1rem;
+    }
+
+    .consultation__contact {
+      padding-top: 4.6875rem;
+      padding-bottom: 4.25rem;
+    }
+
+    .consultation-btn {
+      width: 170px;
+      height: 48px;
+    }
+
+    .consultation__news-letter {
+      padding-top: 2.75rem;
+
+      .d-flex {
+        display: flex;
+      }
+    }
+
+    .newsletter-btn {
+      line-height: 16.1px;
+      text-align: center;
+      padding: 1rem 2.0625rem 1rem 2.0625rem;
+      width: 138px;
+      height: 48px;
     }
   }
 }

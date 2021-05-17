@@ -14,7 +14,8 @@
 }
 
 .btn-m {
-  padding: 0.6rem 1.7rem;
+  // padding: 0.6rem 1.7rem;
+  padding: 1rem 3.75rem;
 }
 
 .btn-s {
@@ -38,8 +39,8 @@
 }
 
 .btn-default {
-  background-color: $color-gray-light;
-  color: $color-text;
+  background-color: #333333;
+  color: $color-white;
 }
 
 .btn-default:hover {

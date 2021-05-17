@@ -91,7 +91,7 @@
 }
 
 .bg-solid-color {
-  background-color: #00ffff;
+  background-color: #fff;
 }
 
 .bg-color-1 {
@@ -733,7 +733,7 @@ header span {
 }
 
 .btn-m {
-  padding: 0.6rem 1.7rem;
+  padding: 1rem 3.75rem;
 }
 
 .btn-s {
@@ -757,8 +757,8 @@ header span {
 }
 
 .btn-default {
-  background-color: #cccccf;
-  color: #110f24;
+  background-color: #333333;
+  color: #fff;
 }
 
 .btn-default:hover {
@@ -820,6 +820,11 @@ header span {
   height: 60px;
   border-radius: 50%;
   border: 3px solid #252525;
+}
+
+input,
+textarea {
+  outline: 0;
 }
 
 #section-1 {
@@ -1041,22 +1046,6 @@ header span {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-#section-3 .service-card .image-1 {
-  background-image: url(./assets/img/service-corporate-card.png);
-}
-
-#section-3 .service-card .image-2 {
-  background-image: url(./assets/img/service-data-privacy-card.png);
-}
-
-#section-3 .service-card .image-3 {
-  background-image: url(./assets/img/service-employment-card.png);
-}
-
-#section-3 .service-card .image-4 {
-  background-image: url(./assets/img/service-intellectual-card.png);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1329,8 +1318,8 @@ header span {
 }
 
 #section-8 {
-  margin-right: 23px;
   margin-left: 23px;
+  margin-right: 23px;
 }
 
 #section-8 .testimonials-image {
@@ -1354,6 +1343,7 @@ header span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 128px;
 }
 
 #section-8 .testimonials__profile-picture {
@@ -1390,6 +1380,247 @@ header span {
   }
   #section-8 .testimonials__profile-social {
     color: #33333380;
+  }
+}
+
+#section-9 {
+  margin-left: 23px;
+  margin-right: 23px;
+}
+
+#section-9 .container {
+  box-shadow: 3px 2px 22px 2px black;
+  -webkit-box-shadow: 3px 2px 22px 2px black;
+  -moz-box-shadow: 3px 2px 22px 2px black;
+}
+
+#section-9 input,
+#section-9 textarea {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 7px 7px 9px 24px;
+  border: 1px solid #dadada;
+  border-radius: 0.5rem;
+}
+
+#section-9 .bg-color-1 {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+#section-9 .bg-color-2 {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#section-9 .consultation-form {
+  padding-top: 3.5rem;
+}
+
+#section-9 .consultation__head {
+  margin-bottom: 1.1875rem;
+}
+
+#section-9 .consultation__sub-head {
+  margin-bottom: 1.75rem;
+}
+
+#section-9 .consultation__contact {
+  padding-top: 4.75rem;
+  padding-bottom: 5.3125rem;
+}
+
+#section-9 .consultation__news-letter {
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
+
+#section-9 .consultation__news-letter .d-flex {
+  display: block;
+}
+
+#section-9 .consultation-form,
+#section-9 .consultation__contact-information-mobile,
+#section-9 .consultation__contact-information-mail,
+#section-9 .consultation__news-letter {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+#section-9 .consultation-form .consultation-name,
+#section-9 .consultation__contact-information-mobile .consultation-name,
+#section-9 .consultation__contact-information-mail .consultation-name,
+#section-9 .consultation__news-letter .consultation-name {
+  margin-bottom: 1.0625rem;
+}
+
+#section-9 .consultation-form .consultation-email,
+#section-9 .consultation__contact-information-mobile .consultation-email,
+#section-9 .consultation__contact-information-mail .consultation-email,
+#section-9 .consultation__news-letter .consultation-email {
+  margin-bottom: 1rem;
+}
+
+#section-9 .consultation-form textarea,
+#section-9 .consultation__contact-information-mobile textarea,
+#section-9 .consultation__contact-information-mail textarea,
+#section-9 .consultation__news-letter textarea {
+  margin-bottom: 1rem;
+  height: 96px;
+}
+
+#section-9 .consultation-form .consultation-btn,
+#section-9 .consultation__contact-information-mobile .consultation-btn,
+#section-9 .consultation__contact-information-mail .consultation-btn,
+#section-9 .consultation__news-letter .consultation-btn {
+  margin-bottom: 4rem;
+}
+
+#section-9 .consultation-form .icon,
+#section-9 .consultation__contact-information-mobile .icon,
+#section-9 .consultation__contact-information-mail .icon,
+#section-9 .consultation__news-letter .icon {
+  margin-right: 1rem;
+}
+
+#section-9 .consultation-form .shape,
+#section-9 .consultation__contact-information-mobile .shape,
+#section-9 .consultation__contact-information-mail .shape,
+#section-9 .consultation__news-letter .shape {
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #333333;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#section-9 .consultation-form .consultation-information-mobile,
+#section-9 .consultation__contact-information-mobile .consultation-information-mobile,
+#section-9 .consultation__contact-information-mail .consultation-information-mobile,
+#section-9 .consultation__news-letter .consultation-information-mobile {
+  margin-bottom: 2.5rem;
+}
+
+#section-9 .consultation-form .consultation-information-mobile .consultation__phone-number,
+#section-9 .consultation__contact-information-mobile .consultation-information-mobile .consultation__phone-number,
+#section-9 .consultation__contact-information-mail .consultation-information-mobile .consultation__phone-number,
+#section-9 .consultation__news-letter .consultation-information-mobile .consultation__phone-number {
+  margin-bottom: 1.1875rem;
+}
+
+#section-9 .consultation-form .consultation__contact-information-mail,
+#section-9 .consultation__contact-information-mobile .consultation__contact-information-mail,
+#section-9 .consultation__contact-information-mail .consultation__contact-information-mail,
+#section-9 .consultation__news-letter .consultation__contact-information-mail {
+  margin-bottom: 5.3125rem;
+}
+
+#section-9 .consultation-form .consultation__contact-information-mail .consultation__email,
+#section-9 .consultation__contact-information-mobile .consultation__contact-information-mail .consultation__email,
+#section-9 .consultation__contact-information-mail .consultation__contact-information-mail .consultation__email,
+#section-9 .consultation__news-letter .consultation__contact-information-mail .consultation__email {
+  margin-bottom: 1px;
+}
+
+#section-9 .consultation-form .consultation__newsletter-head,
+#section-9 .consultation__contact-information-mobile .consultation__newsletter-head,
+#section-9 .consultation__contact-information-mail .consultation__newsletter-head,
+#section-9 .consultation__news-letter .consultation__newsletter-head {
+  color: #fff;
+  margin-bottom: 1.75rem;
+}
+
+#section-9 .consultation-form .consultation__news-letter,
+#section-9 .consultation__contact-information-mobile .consultation__news-letter,
+#section-9 .consultation__contact-information-mail .consultation__news-letter,
+#section-9 .consultation__news-letter .consultation__news-letter {
+  margin-bottom: 1.75rem;
+}
+
+#section-9 .consultation-form .newsletter-email,
+#section-9 .consultation__contact-information-mobile .newsletter-email,
+#section-9 .consultation__contact-information-mail .newsletter-email,
+#section-9 .consultation__news-letter .newsletter-email {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#section-9 .consultation-form .newsletter-btn,
+#section-9 .consultation__contact-information-mobile .newsletter-btn,
+#section-9 .consultation__contact-information-mail .newsletter-btn,
+#section-9 .consultation__news-letter .newsletter-btn {
+  padding: 1rem 2.0625rem 1rem 2.0625rem;
+}
+
+@media screen and (min-width: 576px) {
+  #section-9 .bg-color-1 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 1rem;
+  }
+  #section-9 .bg-color-2 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 1rem;
+  }
+  #section-9 .bg-solid-color {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  #section-9 .consultation-form {
+    padding-top: 4.6875rem;
+    margin-bottom: 80px;
+  }
+  #section-9 .consultation__sub-head {
+    margin-bottom: 2.3125rem;
+  }
+  #section-9 .consultation-name {
+    margin-bottom: 1.0625rem;
+  }
+  #section-9 .consultation-email {
+    margin-bottom: 1rem;
+  }
+  #section-9 textarea {
+    margin-bottom: 1rem;
+    height: 96px;
+  }
+  #section-9 .consultation-btn {
+    margin-bottom: 4rem;
+  }
+  #section-9 .consultation-form,
+  #section-9 .consultation__contact-information-mobile,
+  #section-9 .consultation__contact-information-mail,
+  #section-9 .consultation__news-letter {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  #section-9 .newsletter-email {
+    max-width: 302px;
+    margin-right: 1.1rem;
+  }
+  #section-9 .consultation__contact {
+    padding-top: 4.6875rem;
+    padding-bottom: 4.25rem;
+  }
+  #section-9 .consultation-btn {
+    width: 170px;
+    height: 48px;
+  }
+  #section-9 .consultation__news-letter {
+    padding-top: 2.75rem;
+  }
+  #section-9 .consultation__news-letter .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #section-9 .newsletter-btn {
+    line-height: 16.1px;
+    text-align: center;
+    padding: 1rem 2.0625rem 1rem 2.0625rem;
+    width: 138px;
+    height: 48px;
   }
 }
 /*# sourceMappingURL=main.css.map */

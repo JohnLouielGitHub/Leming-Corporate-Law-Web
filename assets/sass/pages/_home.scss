@@ -1,3 +1,7 @@
+section {
+  margin-bottom: 150px;
+}
+
 input,
 textarea {
   outline: 0;
@@ -209,6 +213,18 @@ textarea {
       height: 100%;
       object-fit: cover;
     }
+    .image-1 {
+      background-image: url(/assets/img/service-corporate-card.png);
+    }
+    .image-2 {
+      background-image: url(/assets/img/service-data-privacy-card.png);
+    }
+    .image-3 {
+      background-image: url(/assets/img/service-employment-card.png);
+    }
+    .image-4 {
+      background-image: url(/assets/img/service-intellectual-card.png);
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -325,7 +341,7 @@ textarea {
     object-fit: cover;
   }
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 992px) {
     .about__company__name {
       padding-top: 236px;
     }
@@ -341,10 +357,9 @@ textarea {
       max-width: 570px;
       object-fit: cover;
     }
-  }
-
-  .about__subtitle-description {
-    max-width: 470px;
+    .about__subtitle-description {
+      max-width: 470px;
+    }
   }
 }
 
@@ -386,7 +401,7 @@ textarea {
     margin-bottom: 176px;
   }
 
-  .stories__slider {
+  .stories-slider {
     margin-bottom: 144px;
   }
 
@@ -532,6 +547,7 @@ textarea {
 #section-9 {
   margin-left: 23px;
   margin-right: 23px;
+  margin-bottom: 100px;
 
   .container {
     box-shadow: 3px 2px 22px 2px rgba(0, 0, 0, 1);
@@ -560,6 +576,7 @@ textarea {
 
   .consultation-form {
     padding-top: 3.5rem;
+    padding-bottom: 4rem;
   }
 
   .consultation__head {
@@ -603,10 +620,6 @@ textarea {
       height: 96px;
     }
 
-    .consultation-btn {
-      margin-bottom: 4rem;
-    }
-
     .icon {
       margin-right: 1rem;
     }
@@ -647,7 +660,6 @@ textarea {
 
     .newsletter-email {
       width: 100%;
-      margin-bottom: 1rem;
     }
 
     .newsletter-btn {
@@ -655,7 +667,17 @@ textarea {
     }
   }
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 992px) {
+    .heading-4 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      font-weight: 700;
+    }
+
+    .container {
+      border-radius: 1rem;
+    }
+
     .bg-color-1 {
       border-top-left-radius: 0;
       border-top-right-radius: 1rem;
@@ -672,7 +694,7 @@ textarea {
 
     .consultation-form {
       padding-top: 4.6875rem;
-      margin-bottom: 80px;
+      padding-bottom: 80px;
     }
 
     .consultation__sub-head {
@@ -692,16 +714,20 @@ textarea {
       height: 96px;
     }
 
-    .consultation-btn {
-      margin-bottom: 4rem;
-    }
-
     .consultation-form,
     .consultation__contact-information-mobile,
     .consultation__contact-information-mail,
     .consultation__news-letter {
       padding-left: 4rem;
       padding-right: 4rem;
+    }
+
+    .consultation-information-mobile {
+      margin-bottom: 1.5rem;
+
+      .consultation__phone-number {
+        margin-bottom: 1.1875rem;
+      }
     }
 
     .newsletter-email {
@@ -715,12 +741,14 @@ textarea {
     }
 
     .consultation-btn {
+      display: block;
       width: 170px;
-      height: 48px;
     }
 
     .consultation__news-letter {
-      padding-top: 2.75rem;
+      .form {
+        height: 48px;
+      }
 
       .d-flex {
         display: flex;
@@ -732,7 +760,152 @@ textarea {
       text-align: center;
       padding: 1rem 2.0625rem 1rem 2.0625rem;
       width: 138px;
+    }
+  }
+}
+
+// section-9 is broken
+
+#section-10 {
+  // heading - blog section
+  margin-left: 23px;
+  margin-right: 23px;
+
+  .blog__heading {
+    margin-bottom: 17px;
+  }
+
+  .blog__title-description {
+    margin-bottom: 15px;
+  }
+
+  .blog__subtitle-description {
+    margin-bottom: 64px;
+  }
+
+  .blog__card {
+    overflow-x: hidden;
+    border-radius: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 330px;
+    margin-bottom: 64px;
+
+    img {
+      object-fit: cover;
+    }
+
+    .blog__content {
+      padding: 18px 32px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .blog__heading {
+      margin-bottom: 20px;
+    }
+    .blog__title-description {
+      margin-bottom: 28px;
+    }
+    .blog__subtitle-description {
+      margin-bottom: 76px;
+    }
+    .blog__card {
+      margin-bottom: 80px;
+      max-width: 370px;
+    }
+  }
+}
+
+footer {
+  padding-left: 23px;
+  padding-right: 23px;
+  background-color: #333333;
+
+  .d-flex {
+    display: block;
+  }
+
+  .copyright-container {
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 69px;
+  }
+
+  .logo {
+    margin-top: 90px;
+    margin-bottom: 21px;
+  }
+
+  .footer-logo {
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    width: 48px;
+  }
+
+  .icons {
+    display: flex;
+    margin-bottom: 74px;
+
+    .footer-social-icon {
+      width: 48px;
       height: 48px;
+      background-color: #495d4d;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    .social-icon {
+      padding: 1rem;
+      text-align: center;
+      object-fit: contain;
+    }
+  }
+
+  ul {
+    display: block;
+    margin-bottom: 63px;
+  }
+  li a,
+  li {
+    color: $color-white;
+  }
+  @media screen and (min-width: 768px) {
+    .d-flex {
+      display: flex;
+    }
+    .column-md-6:nth-of-type(2) {
+      margin-top: 90px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .container {
+      padding-top: 90px;
+      padding-bottom: 53px;
+    }
+
+    .column-md-6:nth-of-type(2) {
+      margin-top: 0;
+    }
+
+    .logo {
+      margin-top: 0;
+      margin-bottom: 21px;
+    }
+    .icons {
+      margin-bottom: 1.3125rem;
+    }
+
+    .heading-5 {
+      margin-bottom: 17px;
+    }
+
+    .margin-b {
+      margin-bottom: 62px;
+    }
+
+    .margin-t {
+      margin-top: 42px;
     }
   }
 }

@@ -208,14 +208,16 @@
           />
         </div>
         <div class="text-center">
-          <button class="clients__btn"><a href="#">Appointment</a></button>
+          <button href="#" class="clients__btn btn btn-m btn-default">
+            <a>Appointment</a>
+          </button>
         </div>
       </div>
     </section>
 
     <section id="section-5">
       <div class="container">
-        <div class="row flex-wrap flex-row-reverse">
+        <div class="row flex-wrap flex-center flex-row-reverse">
           <div class="column column-lg-6 text-center">
             <img
               class="about__image"
@@ -224,15 +226,17 @@
             />
           </div>
           <div class="column column-lg-6">
-            <h5 class="about__company__name heading-5">About</h5>
-            <h2 class="about__title-description heading-3">
-              Justice is Valuable
-            </h2>
-            <p class="about__subtitle-description text_big">
-              The sky was cloudless and of a deep dark blue. The spectacle
-              before us was indeed sublime.
-            </p>
-            <button class="about__btn"><a href="#">Read More</a></button>
+            <div class="mx-auto">
+              <h5 class="about__company__name heading-5">About</h5>
+              <h2 class="about__title-description heading-3">
+                Justice is Valuable
+              </h2>
+              <p class="about__subtitle-description text_big">
+                The sky was cloudless and of a deep dark blue. The spectacle
+                before us was indeed sublime.
+              </p>
+              <button class="about__btn"><a href="#">Read More</a></button>
+            </div>
           </div>
         </div>
       </div>
@@ -350,11 +354,11 @@
       </div>
     </section>
 
-    <section id="section-9">
-      <div class="container">
+    <section id="section-9" class="relative">
+      <div class="container bg-none">
         <div class="row">
-          <div class="column column-sm-6 bg-solid-color">
-            <div class="consultation-form">
+          <div class="column column-sm-6">
+            <div class="consultation-form bg-solid-color">
               <div class="consultation__head heading-4">Get Consultation</div>
               <div class="consultation__sub-head text">
                 The sky was cloudless and of a deep dark blue. The spectacle
@@ -447,36 +451,127 @@
       </div>
     </section>
 
-    <!-- <section class="container">
-      <div class="row">
-        <div class="column column-12">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-          molestiae.
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-sm-4">Lorem ipsum dolor sit amet.</div>
-        <div class="column column-sm-4">Lorem ipsum dolor sit amet.</div>
-        <div class="column column-sm-4">Lorem ipsum dolor sit amet.</div>
-      </div>
-    </section> -->
-
-    <!-- <footer>
+    <section id="section-10">
       <div class="container">
         <div class="row">
-          <div class="column column-sm-3">A</div>
-          <div class="column column-sm-3">B</div>
-          <div class="column column-sm-3">C</div>
-          <div class="column column-sm-3">D</div>
+          <div class="column column-sm-12 text-center">
+            <h5 class="blog__heading heading-5">Our Blog</h5>
+            <h1 class="blog__title-description heading-2">Latest Articles</h1>
+            <p class="blog__subtitle-description text_big">
+              The sky was cloudless and of a deep dark blue. The spectacle
+              before us was indeed sublime.
+            </p>
+          </div>
         </div>
         <div class="row flex-between">
-          <div class="copyright">@@@@@</div>
-          <div class="terms">
-            <span>Terms of use</span>
-            <span>Privacy Policy</span>
+          <div class="column column-sm-4">
+            <div class="blog__card">
+              <img src="./assets/img/blog-image-1.png" alt="blog-image-1.png" />
+              <div class="blog__content bg-solid-color">
+                <div class="heading-4">
+                  It was going to be a lonely trip back
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column column-sm-4">
+            <div class="blog__card">
+              <img src="./assets/img/blog-image-2.png" alt="blog-image-2.png" />
+              <div class="blog__content bg-solid-color">
+                <div class="heading-4">My two natures had memory in common</div>
+              </div>
+            </div>
+          </div>
+          <div class="column column-sm-4">
+            <div class="blog__card">
+              <img src="./assets/img/blog-image-3.png" alt="blog-image-3.png" />
+              <div class="blog__content bg-solid-color">
+                <div class="heading-4">
+                  Silver mist suffused the deck of the ship
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="blog-btn btn btn-default">Explore Blog</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="column column-md-6 column-lg-3">
+            <div class="logo">
+              <img
+                class="footer-logo"
+                src="./assets/img/logo.svg"
+                alt="logo.png"
+              />
+            </div>
+            <div class="icons">
+              <div class="footer-social-icon text-center">
+                <img
+                  class="social-icon"
+                  src="./assets/img/Facebook-icon.png"
+                  alt="Facebook-icon.png"
+                />
+              </div>
+              <div class="footer-social-icon text-center">
+                <img
+                  class="social-icon"
+                  src="./assets/img/Twitter-icon.png"
+                  alt="Twitter-icon.png"
+                />
+              </div>
+              <div class="footer-social-icon text-center">
+                <img
+                  class="social-icon"
+                  src="./assets/img/Instagram-icon.png"
+                  alt="Instagram-icon.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="column column-md-6 column-lg-3">
+            <div class="heading-5">Menu</div>
+            <ul class="text">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Cases</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="column column-md-6 column-lg-3">
+            <div class="heading-5">Service</div>
+            <ul class="text">
+              <li><a href="#">Corporate</a></li>
+              <li><a href="#">Data Privacy</a></li>
+              <li><a href="#">Employment</a></li>
+              <li><a href="#">Intellectual</a></li>
+            </ul>
+          </div>
+          <div class="column column-md-6 column-lg-3">
+            <div class="heading-5">Office</div>
+            <ul class="text">
+              <li>109 Proctor Ave.</li>
+              <li>Riverview, Fl 35669</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="copyright-container d-flex flex-between text-center">
+            <div class="copyright margin-t">
+              Copyright © 2020 Laaqiq. All Rights Reserved.
+            </div>
+            <div class="terms margin-t">
+              <a class="margin-r" href="#">Terms of use</a>
+              <a href="#">Privacy Policy</a>
+            </div>
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

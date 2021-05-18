@@ -20,30 +20,29 @@
   </head>
   <body>
     <header>
-      <div class="container d-flex">
-        <span class="heading-3">LWR</span>
+      <div class="container d-flex flex-between">
+        <img class="header-logo" src="./assets/img/logo.svg" alt="logo.png" />
+
         <nav>
           <ul class="nav-menu">
             <li class="nav-menu__link text"><a href="#">About</a></li>
             <li class="nav-menu__link text"><a href="#">Cases</a></li>
             <li class="nav-menu__link text"><a href="#">Blog</a></li>
             <li class="nav-menu__link text"><a href="#">Contact</a></li>
-            <li class="nav-menu__link">
-              <a href="#" class="btn btn-m btn-default">Appointment</a>
-            </li>
           </ul>
         </nav>
+        <a class="button-light" href="#">Appointment</a>
       </div>
     </header>
 
     <section id="section-1">
-      <div class="container overflow-unset-lg">
-        <div class="row flex-wrap flex-row-reverse">
-          <div class="column column-lg-6 relative text-center">
+      <div class="container h100">
+        <div class="row flex-center h100 flex-row-reverse">
+          <div class="column column-lg-6 text-center relative">
             <div class="bg-hero absolute"></div>
             <img
               class="img-hero"
-              src="./assets/img/hero__image.png.png"
+              src="./assets/img/hero-image.png"
               alt="hero-image.png"
             />
           </div>
@@ -56,7 +55,7 @@
               The sky was cloudless and of a deep dark blue. The spectacle
               before us was indeed sublime.
             </p>
-            <button class="hero__btn"><a href="#">Explore</a></button>
+            <a href="#" class="btn btn-m button-primary">Explore</a>
           </div>
         </div>
       </div>
@@ -80,7 +79,7 @@
               <div class="card__title bold-m text-right">Quality</div>
               <p class="card__description">
                 Great height in the atmosphere, for the sky was a dead black,
-                and the stars had ceased to twinkle same.
+                and the stars had ceased to twinkle in the same time.
               </p>
               <a href="#">Read More</a>
             </div>
@@ -180,35 +179,38 @@
             </div>
           </div>
         </div>
-        <div class="column d-flex flex-wrap flex-center flex-around">
-          <img
-            class="clients__company"
-            src="./assets/img/Atlassian.png"
-            alt="Atlassian.png"
-          />
-          <img
-            class="clients__company"
-            src="./assets/img/Slack.png"
-            alt="Slack.png"
-          />
-          <img
-            class="clients__company"
-            src="./assets/img/Dropbox.png"
-            alt="Dropbox.png"
-          />
-          <img
-            class="clients__company"
-            src="./assets/img/Shopify.png"
-            alt="Shopify.png"
-          />
-          <img
-            class="clients__company"
-            src="./assets/img/Google.png"
-            alt="Google.png"
-          />
+        <div class="row">
+          <div class="column d-flex flex-wrap flex-center flex-around">
+            <img
+              class="clients__company"
+              src="./assets/img/Atlassian.png"
+              alt="Atlassian.png"
+            />
+            <img
+              class="clients__company"
+              src="./assets/img/Slack.png"
+              alt="Slack.png"
+            />
+            <img
+              class="clients__company"
+              src="./assets/img/Dropbox.png"
+              alt="Dropbox.png"
+            />
+            <img
+              class="clients__company"
+              src="./assets/img/Shopify.png"
+              alt="Shopify.png"
+            />
+            <img
+              class="clients__company"
+              src="./assets/img/Google.png"
+              alt="Google.png"
+            />
+          </div>
         </div>
+
         <div class="text-center">
-          <button href="#" class="clients__btn btn btn-m btn-default">
+          <button href="#" class="clients__btn button-primary">
             <a>Appointment</a>
           </button>
         </div>
@@ -235,7 +237,9 @@
                 The sky was cloudless and of a deep dark blue. The spectacle
                 before us was indeed sublime.
               </p>
-              <button class="about__btn"><a href="#">Read More</a></button>
+              <button class="button-primary">
+                <a href="#">Read More</a>
+              </button>
             </div>
           </div>
         </div>
@@ -245,15 +249,15 @@
     <section id="section-6">
       <div class="container bg-color-3 text-center">
         <div class="row">
-          <div class="column column-lg-4">
+          <div class="column column-md-4 column-lg-4">
             <div class="heading-2">100+</div>
             <div class="text_big">Clients</div>
           </div>
-          <div class="column column-lg-4">
+          <div class="column column-md-4 column-lg-4">
             <div class="heading-2">99%</div>
             <div class="text_big">Winning Cases</div>
           </div>
-          <div class="column column-lg-4">
+          <div class="column column-md-4 column-lg-4">
             <div class="heading-2">73k</div>
             <div class="text_big">Recovered Money</div>
           </div>
@@ -357,7 +361,7 @@
     <section id="section-9">
       <div class="container bg-none">
         <div class="row">
-          <div class="column column-sm-6">
+          <div class="column column-lg-6">
             <div class="consultation-form bg-solid-color">
               <div class="consultation__head heading-4">Get Consultation</div>
               <div class="consultation__sub-head text">
@@ -382,13 +386,13 @@
                   placeholder="Message"
                 ></textarea>
 
-                <a href="#" class="consultation-btn btn btn-m btn-default"
-                  >Submit</a
-                >
+                <button class="button-primary">
+                  <a href="#">Submit</a>
+                </button>
               </form>
             </div>
           </div>
-          <div class="column column-sm-6">
+          <div class="column column-lg-6">
             <div class="column bg-color-1">
               <div class="consultation__contact">
                 <div class="consultation__contact-information-mobile d-flex">
@@ -417,7 +421,7 @@
                       alt="mail.png"
                     />
                   </div>
-                  <div class="consultation-information">
+                  <div class="consultation-information-email">
                     <div class="consultation__email text_big">
                       lawyer@company.com
                     </div>
@@ -440,9 +444,9 @@
                     placeholder="Your Email"
                     class="newsletter-email"
                   />
-                  <a href="#" class="newsletter-btn btn btn-default"
-                    >Subscribe</a
-                  >
+                  <button class="button-primary">
+                    <a href="#">Subscribe</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -464,9 +468,13 @@
           </div>
         </div>
         <div class="row flex-between">
-          <div class="column column-sm-4">
+          <div class="column column-md-6 column-lg-4">
             <div class="blog__card">
-              <img src="./assets/img/blog-image-1.png" alt="blog-image-1.png" />
+              <img
+                class="blog__card-image"
+                src="./assets/img/blog-image-1.png"
+                alt="blog-image-1.png"
+              />
               <div class="blog__content bg-solid-color">
                 <div class="heading-4">
                   It was going to be a lonely trip back
@@ -474,17 +482,25 @@
               </div>
             </div>
           </div>
-          <div class="column column-sm-4">
+          <div class="column column-md-6 column-lg-4">
             <div class="blog__card">
-              <img src="./assets/img/blog-image-2.png" alt="blog-image-2.png" />
+              <img
+                class="blog__card-image"
+                src="./assets/img/blog-image-2.png"
+                alt="blog-image-2.png"
+              />
               <div class="blog__content bg-solid-color">
                 <div class="heading-4">My two natures had memory in common</div>
               </div>
             </div>
           </div>
-          <div class="column column-sm-4">
+          <div class="column column-md-12 column-lg-4">
             <div class="blog__card">
-              <img src="./assets/img/blog-image-3.png" alt="blog-image-3.png" />
+              <img
+                class="blog__card-image"
+                src="./assets/img/blog-image-3.png"
+                alt="blog-image-3.png"
+              />
               <div class="blog__content bg-solid-color">
                 <div class="heading-4">
                   Silver mist suffused the deck of the ship
@@ -494,80 +510,86 @@
           </div>
         </div>
         <div class="text-center">
-          <a href="#" class="blog-btn btn btn-default">Explore Blog</a>
+          <button class="button-tertiary">
+            <a href="#">Explore Blog</a>
+          </button>
         </div>
       </div>
     </section>
 
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="column column-md-6 column-lg-3">
-            <div class="logo">
-              <img
-                class="footer-logo"
-                src="./assets/img/logo.svg"
-                alt="logo.png"
-              />
+        <div class="upper-footer">
+          <div class="row">
+            <div class="column column-md-6 column-lg-3">
+              <div class="logo">
+                <img
+                  class="footer-logo"
+                  src="./assets/img/logo.svg"
+                  alt="logo.png"
+                />
+              </div>
+              <div class="icons">
+                <div class="footer-social-icon text-center">
+                  <img
+                    class="social-icon"
+                    src="./assets/img/Facebook-icon.png"
+                    alt="Facebook-icon.png"
+                  />
+                </div>
+                <div class="footer-social-icon text-center">
+                  <img
+                    class="social-icon"
+                    src="./assets/img/Twitter-icon.png"
+                    alt="Twitter-icon.png"
+                  />
+                </div>
+                <div class="footer-social-icon text-center">
+                  <img
+                    class="social-icon"
+                    src="./assets/img/Instagram-icon.png"
+                    alt="Instagram-icon.png"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="icons">
-              <div class="footer-social-icon text-center">
-                <img
-                  class="social-icon"
-                  src="./assets/img/Facebook-icon.png"
-                  alt="Facebook-icon.png"
-                />
-              </div>
-              <div class="footer-social-icon text-center">
-                <img
-                  class="social-icon"
-                  src="./assets/img/Twitter-icon.png"
-                  alt="Twitter-icon.png"
-                />
-              </div>
-              <div class="footer-social-icon text-center">
-                <img
-                  class="social-icon"
-                  src="./assets/img/Instagram-icon.png"
-                  alt="Instagram-icon.png"
-                />
-              </div>
+            <div class="column column-md-6 column-lg-3">
+              <div class="heading-5">Menu</div>
+              <ul class="text">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Cases</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
             </div>
-          </div>
-          <div class="column column-md-6 column-lg-3">
-            <div class="heading-5">Menu</div>
-            <ul class="text">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Cases</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="column column-md-6 column-lg-3">
-            <div class="heading-5">Service</div>
-            <ul class="text">
-              <li><a href="#">Corporate</a></li>
-              <li><a href="#">Data Privacy</a></li>
-              <li><a href="#">Employment</a></li>
-              <li><a href="#">Intellectual</a></li>
-            </ul>
-          </div>
-          <div class="column column-md-6 column-lg-3">
-            <div class="heading-5">Office</div>
-            <ul class="text">
-              <li>109 Proctor Ave.</li>
-              <li>Riverview, Fl 35669</li>
-            </ul>
+            <div class="column column-md-6 column-lg-3">
+              <div class="heading-5">Service</div>
+              <ul class="text">
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">Data Privacy</a></li>
+                <li><a href="#">Employment</a></li>
+                <li><a href="#">Intellectual</a></li>
+              </ul>
+            </div>
+            <div class="column column-md-6 column-lg-3">
+              <div class="heading-5">Office</div>
+              <ul class="text">
+                <li>109 Proctor Ave.</li>
+                <li>Riverview, Fl 35669</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="copyright-container d-flex flex-between text-center">
-            <div class="copyright margin-t">
-              Copyright © 2020 Laaqiq. All Rights Reserved.
-            </div>
-            <div class="terms margin-t">
-              <a class="margin-r" href="#">Terms of use</a>
-              <a href="#">Privacy Policy</a>
+        <div class="lower-footer">
+          <div class="row">
+            <div class="copyright-container d-flex flex-between text-center">
+              <div class="copyright margin-t">
+                Copyright © 2020 Laaqiq. All Rights Reserved.
+              </div>
+              <div class="terms margin-t">
+                <a class="margin-r" href="#">Terms of use</a>
+                <a href="#">Privacy Policy</a>
+              </div>
             </div>
           </div>
         </div>

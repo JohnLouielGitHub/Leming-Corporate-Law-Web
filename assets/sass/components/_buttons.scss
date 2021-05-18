@@ -109,3 +109,95 @@
   border-radius: 50%;
   border: 3px solid #252525;
 }
+
+.button-light {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 16px 30px 16px 30px;
+
+  border-radius: 0.5rem;
+  border: 1px solid rgba(129, 128, 128, 0.4);
+  background-color: transparent;
+
+  a {
+    color: $color-text;
+  }
+}
+
+.button-light:hover {
+  background-color: $color-white;
+  cursor: pointer;
+  color: $color-gray-dark;
+}
+
+.button-primary {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: auto 58px;
+  width: 100%;
+  max-width: 170px;
+  height: 48px;
+  border-radius: 0.5rem;
+  background-color: #333333;
+  color: $color-white;
+}
+
+.button-primary:hover {
+  background-color: $color-gray-dark;
+  color: $color-white;
+  cursor: pointer;
+}
+
+.button-secondary {
+  font-family: Caladea;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  padding: auto 58px;
+  width: 100%;
+  max-width: 170px;
+  height: 48px;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color-white;
+  color: #333333;
+}
+
+.button-secondary:hover {
+  background-color: #333333;
+  cursor: pointer;
+  color: $color-white;
+}
+
+.button-tertiary {
+  font-family: Caladea;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  padding: auto 58px;
+  width: 100%;
+  max-width: 170px;
+  height: 48px;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #e2b358;
+  color: $color-white;
+}
+
+.button-tertiary:hover {
+  background-color: #e2a52c;
+  cursor: pointer;
+  color: $color-white;
+}

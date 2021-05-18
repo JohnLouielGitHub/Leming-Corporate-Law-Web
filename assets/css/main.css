@@ -1441,6 +1441,7 @@ textarea {
   box-shadow: 3px 2px 22px 2px black;
   -webkit-box-shadow: 3px 2px 22px 2px black;
   -moz-box-shadow: 3px 2px 22px 2px black;
+  border-radius: 1rem;
 }
 
 #section-9 input,
@@ -1466,6 +1467,8 @@ textarea {
 #section-9 .consultation-form {
   padding-top: 3.5rem;
   padding-bottom: 4rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 #section-9 .consultation__head {

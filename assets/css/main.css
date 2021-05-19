@@ -1310,19 +1310,19 @@ textarea {
 }
 
 #service-section .service-card .image-1 {
-  background-image: url(./assets/img/service-corporate-card.png);
+  background-image: url(/assets/img/service-corporate-card.png);
 }
 
 #service-section .service-card .image-2 {
-  background-image: url(./assets/img/service-data-privacy-card.png);
+  background-image: url(/assets/img/service-data-privacy-card.png);
 }
 
 #service-section .service-card .image-3 {
-  background-image: url(./assets/img/service-employment-card.png);
+  background-image: url(/assets/img/service-employment-card.png);
 }
 
 #service-section .service-card .image-4 {
-  background-image: url(./assets/img/service-intellectual-card.png);
+  background-image: url(/assets/img/service-intellectual-card.png);
 }
 
 @media screen and (min-width: 768px) {
@@ -1370,12 +1370,6 @@ textarea {
     line-height: 3rem;
     font-weight: 700;
   }
-  #service-section .service-card .service-img {
-    max-height: none;
-  }
-  #service-section .service-card .service-img .image-2 {
-    background-image: url(./assets/img/service-data-privacy-card-1.png);
-  }
   #service-section .services__content-cards {
     margin: 0 auto;
     overflow: hidden;
@@ -1393,20 +1387,21 @@ textarea {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    max-height: none;
     -o-object-fit: cover;
        object-fit: cover;
   }
   #service-section .services__content-cards > .service-card .image-1 {
-    background-image: url(./assets/img/service-corporate-card.png);
+    background-image: url(/assets/img/service-corporate-card.png);
   }
   #service-section .services__content-cards > .service-card .image-2 {
-    background-image: url(./assets/img/service-data-privacy-card-1.png);
+    background-image: url(/assets/img/service-data-privacy-card-1.png);
   }
   #service-section .services__content-cards > .service-card .image-3 {
-    background-image: url(./assets/img/service-employment-card.png);
+    background-image: url(/assets/img/service-employment-card.png);
   }
   #service-section .services__content-cards > .service-card .image-4 {
-    background-image: url(./assets/img/service-intellectual-card.png);
+    background-image: url(/assets/img/service-intellectual-card.png);
   }
   #service-section .services__content-cards :nth-child(1) {
     -ms-grid-column: 1;

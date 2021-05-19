@@ -410,6 +410,21 @@ textarea {
   padding-right: 8px;
   padding-left: 8px;
 
+  .carousel {
+    height: 100%;
+    max-height: 592px;
+    margin-bottom: 96px;
+  }
+
+  .story-card {
+    max-width: 570px;
+    width: 100%;
+    min-height: 592px;
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .stories__heading {
     margin-bottom: 1.25rem;
   }
@@ -417,34 +432,91 @@ textarea {
     margin-bottom: 1.75rem;
   }
   .stories__subtitle-description {
-    margin-bottom: 3.5rem;
+    margin-bottom: 4.9375rem;
   }
 
   .stories__image {
     max-width: 300px;
-  }
-
-  .stories-slider {
-    margin-bottom: 96px;
+    margin-bottom: 239px;
   }
 
   .stories__content {
-    z-index: 3;
-    background-color: #fff;
-    top: 256px;
-    left: 51px;
-    padding: 42px 28px 48px 48px;
+    padding-right: 28px;
+    padding-left: 56px;
+    padding-top: 42px;
+    padding-bottom: 48px;
+    color: #333333;
+    background-color: $color-white;
     border-radius: 1rem;
-    box-shadow: 8px 11px 15px -1px rgba(0, 0, 0, 0.41);
-    -webkit-box-shadow: 8px 11px 15px -1px rgba(0, 0, 0, 0.41);
-    -moz-box-shadow: 8px 11px 15px -1px rgba(0, 0, 0, 0.41);
-    margin-bottom: 64px;
+    top: 256px;
+    left: 28px;
+    box-shadow: 0px 24px 64px rgba(41, 15, 0, 0.0985337);
+    border-radius: 16px;
+  }
+
+  .stories__content-title {
+    margin-bottom: 6px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .column {
+      padding: 0 30px;
+    }
+
+    .column:last-of-type {
+      display: block;
+    }
+
+    .carousel {
+      height: 100%;
+      max-height: 672px;
+      margin-bottom: 96px;
+    }
+
+    .story-card {
+      max-width: 518px;
+      width: 100%;
+      min-height: 672px;
+      height: 100%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .stories__heading {
+      margin-bottom: 1.25rem;
+    }
+    .stories__title-description {
+      margin-bottom: 1.75rem;
+    }
+    .stories__subtitle-description {
+      max-width: 570px;
+      margin-bottom: 3.5rem;
+    }
+
+    .stories__image {
+      max-width: 470px;
+      margin-bottom: 176px;
+    }
+
+    .stories__content {
+      padding-right: 28px;
+      padding-left: 56px;
+      padding-top: 42px;
+      padding-bottom: 48px;
+      max-width: 470px;
+      color: #333333;
+      background-color: $color-white;
+      border-radius: 1rem;
+      top: 400px;
+      left: 68px;
+    }
 
     .stories__content-title {
       margin-bottom: 6px;
     }
-    .stories__content-subtitle {
-      max-width: 313px;
+
+    .stories-slider {
+      margin-bottom: 144px;
     }
   }
 }
@@ -452,27 +524,21 @@ textarea {
 #testimonial-section {
   padding-left: 8px;
   padding-right: 8px;
-  margin-bottom: 208px;
+  margin-bottom: 128px;
 
   .bg-testimonial {
     background-color: #fff0dd;
     width: 50vw;
-    height: 1500px;
+    height: 1900px;
     top: 0;
     right: calc(50%);
     border-top-right-radius: 100px;
     z-index: -1;
   }
 
-  @media screen and (min-width: 992px) {
-    .bg-testimonial {
-      width: 100%;
-      left: 0;
-    }
-  }
-
   .testimonials-image {
     max-width: 330px;
+    width: 100%;
     padding-top: 128px;
     margin-bottom: 3.1875rem;
   }
@@ -488,7 +554,6 @@ textarea {
 
   .testimonials__profile {
     align-items: center;
-    margin-bottom: 128px;
   }
 
   .testimonials__profile-picture {
@@ -502,29 +567,42 @@ textarea {
     margin-bottom: 0.125rem;
   }
 
-  @media screen and (min-width: 992px) {
-    .testimonials-div {
-      margin-left: 45px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 208px;
 
     .testimonials-image {
       max-width: 570px;
+      padding-top: 176px;
+      margin-bottom: 0;
     }
+
     .testimonials__heading {
-      max-width: 331px;
-      margin-top: 2.625rem;
       margin-bottom: 1.25rem;
     }
     .testimonials__title-description {
+      max-width: 331px;
       margin-bottom: 1.75rem;
     }
     .testimonials__subtitle-description {
       color: #333333;
-
-      margin-bottom: 2.1875rem;
+      margin-bottom: 35px;
     }
     .testimonials__profile-social {
+      margin-bottom: 0;
       color: #33333380;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .testimonials-div {
+      max-width: 470px;
+      margin-left: 45px;
+      margin-top: 220px;
+    }
+
+    .bg-testimonial {
+      width: 50vw;
+      right: calc(50%);
     }
   }
 }

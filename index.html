@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -15,6 +16,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
@@ -34,466 +39,528 @@
         <a class="button-light" href="#">Appointment</a>
       </div>
     </header>
-
-    <section id="hero-section">
-      <div class="container h100">
-        <div class="row flex-center h100 flex-row-reverse">
-          <div class="column column-lg-6 text-center relative">
-            <div class="bg-hero absolute"></div>
-            <img
-              class="img-hero"
-              src="./assets/img/hero-image.png"
-              alt="hero-image.png"
-            />
-          </div>
-          <div class="column column-lg-6">
-            <h5 class="hero__company__name heading-5">Lawyer</h5>
-            <h1 class="hero__title-description heading-1">
-              Finding Out the Truth, Arguing and Winning
-            </h1>
-            <p class="hero__subtitle-description text_big">
-              The sky was cloudless and of a deep dark blue. The spectacle
-              before us was indeed sublime.
-            </p>
-            <a href="#" class="btn btn-m button-primary">Explore</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="quality-section">
-      <div class="container">
-        <div class="row">
-          <div class="column column-lg-4 margin-b">
-            <div class="sc-2__card relative">
+    <main>
+      <section id="hero-section">
+        <div class="container h100">
+          <div class="row flex-center h100 flex-row-reverse">
+            <div class="column column-lg-6 text-center relative">
+              <div class="bg-hero absolute"></div>
               <img
-                class="img-bg-shape absolute"
-                src="./assets/img/Quality-bg-shape.png"
-                alt="quality-bg-shape.png"
+                class="img-hero"
+                src="./assets/img/hero-image.png"
+                alt="hero-image.png"
               />
-              <img
-                class="card__shape"
-                src="./assets/img/Quality-shape.png"
-                alt="Quality.png"
-              />
-              <div class="card__title bold-m text-right">Quality</div>
-              <p class="card__description">
-                Great height in the atmosphere, for the sky was a dead black,
-                and the stars had ceased to.
-              </p>
-              <a href="#">Read More</a>
             </div>
-          </div>
-          <div class="column column-lg-4 margin-b">
-            <div class="sc-2__card relative">
-              <img
-                class="img-bg-shape absolute"
-                src="./assets/img/Experience-bg-shape.png"
-                alt="quality-bg-shape.png"
-              />
-              <img
-                class="card__shape"
-                src="./assets/img/Experience-shape.png"
-                alt="Experience.png"
-              />
-              <div class="card__title bold-m text-right">Experience</div>
-              <p class="card__description">
-                Height in the atmosphere, for the sky was a dead black, and the
-                stars had ceased to twinkle the same illusion which lifts.
-              </p>
-              <a href="#">Read More</a>
-            </div>
-          </div>
-          <div class="column column-lg-4 margin-b">
-            <div class="sc-2__card relative">
-              <img
-                class="img-bg-shape absolute"
-                src="./assets/img/Awards-bg-shape.png"
-                alt="quality-bg-shape.png"
-              />
-              <img
-                class="card__shape"
-                src="./assets/img/Awards-shape.png"
-                alt="Awards.png"
-              />
-              <div class="card__title bold-m text-right">Awards</div>
-              <p class="card__description">
-                In the atmosphere, for the sky was a dead black, and the stars
-                had ceased to twinkle the same illusion which lifts.
-              </p>
-              <a href="#">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="service-section">
-      <div class="container">
-        <div class="service__heading column text-center">
-          <h5 class="service__head heading-5">Our Service</h5>
-          <h1 class="service__title-description heading-2">Service Offering</h1>
-          <p class="service__subtitle-description text_big">
-            The sky was cloudless and of a deep dark blue. The spectacle before
-            us was indeed sublime.
-          </p>
-        </div>
-        <div class="column">
-          <div class="services__content-cards d-grid">
-            <div class="grid column service-card bg-color-1 relative">
-              <div class="service-img image-1"></div>
-              <div class="absolute service-text heading-3">
-                <h4>Corporate</h4>
-              </div>
-            </div>
-            <div class="grid column service-card bg-color-2 relative">
-              <div class="service-img image-2"></div>
-              <div class="absolute service-text heading-4">
-                <h4>Privacy Policy</h4>
-              </div>
-            </div>
-            <div class="grid column service-card bg-color-3 relative">
-              <div class="service-img image-3"></div>
-              <div class="absolute service-text heading-4">
-                <h4>Employment</h4>
-              </div>
-            </div>
-            <div class="grid column service-card bg-color-4 relative">
-              <div class="service-img image-4"></div>
-              <div class="absolute service-text heading-4">
-                <h4>Intellectual</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="clients-section">
-      <div class="container">
-        <div class="row flex-center">
-          <div class="column text-center">
-            <div class="clients__sub-heading heading-5">Our Clients</div>
-            <div class="clients__heading heading-3">
-              Companies that know me well confirm that I am a great lawyer
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column d-flex flex-wrap flex-center flex-around">
-            <img
-              class="clients__company"
-              src="./assets/img/Atlassian.png"
-              alt="Atlassian.png"
-            />
-            <img
-              class="clients__company"
-              src="./assets/img/Slack.png"
-              alt="Slack.png"
-            />
-            <img
-              class="clients__company"
-              src="./assets/img/Dropbox.png"
-              alt="Dropbox.png"
-            />
-            <img
-              class="clients__company"
-              src="./assets/img/Shopify.png"
-              alt="Shopify.png"
-            />
-            <img
-              class="clients__company"
-              src="./assets/img/Google.png"
-              alt="Google.png"
-            />
-          </div>
-        </div>
-
-        <div class="text-center">
-          <a href="#" class="btn btn-m button-primary">Appointment</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about-section">
-      <div class="container">
-        <div class="row flex-wrap flex-center flex-row-reverse">
-          <div class="column column-lg-6 text-center">
-            <img
-              class="about__image"
-              src="./assets/img/about__image.png"
-              alt="about-image.png"
-            />
-          </div>
-          <div class="column column-lg-6">
-            <div class="mx-auto">
-              <h5 class="about__company__name heading-5">About</h5>
-              <h2 class="about__title-description heading-3">
-                Justice is Valuable
-              </h2>
-              <p class="about__subtitle-description text_big">
+            <div class="column column-lg-6">
+              <h5 class="hero__company__name heading-5">Lawyer</h5>
+              <h1 class="hero__title-description heading-1">
+                Finding Out the Truth, Arguing and Winning
+              </h1>
+              <p class="hero__subtitle-description text_big">
                 The sky was cloudless and of a deep dark blue. The spectacle
                 before us was indeed sublime.
               </p>
-              <a href="#" class="btn btn-m button-primary">Read More</a>
+              <a href="#" class="btn btn-m button-primary">Explore</a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="stats-section">
-      <div class="container bg-color-3 text-center">
-        <div class="row">
-          <div class="column column-md-4 column-lg-4">
-            <div class="heading-2">100+</div>
-            <div class="text_big">Clients</div>
-          </div>
-          <div class="column column-md-4 column-lg-4">
-            <div class="heading-2">99%</div>
-            <div class="text_big">Winning Cases</div>
-          </div>
-          <div class="column column-md-4 column-lg-4">
-            <div class="heading-2">73k</div>
-            <div class="text_big">Recovered Money</div>
+      <section id="quality-section" class="relative">
+        <div class="bg-color-sc-1"></div>
+        <div class="container">
+          <div class="row">
+            <div class="column column-lg-4 margin-b">
+              <div class="sc-2__card relative">
+                <img
+                  class="img-bg-shape absolute"
+                  src="./assets/img/Quality-bg-shape.png"
+                  alt="quality-bg-shape.png"
+                />
+                <img
+                  class="card__shape"
+                  src="./assets/img/Quality-shape.png"
+                  alt="Quality.png"
+                />
+                <div class="card__title bold-m text-right">Quality</div>
+                <p class="card__description">
+                  Great height in the atmosphere, for the sky was a dead black,
+                  and the stars had ceased to.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="column column-lg-4 margin-b">
+              <div class="sc-2__card relative">
+                <img
+                  class="img-bg-shape absolute"
+                  src="./assets/img/Experience-bg-shape.png"
+                  alt="quality-bg-shape.png"
+                />
+                <img
+                  class="card__shape"
+                  src="./assets/img/Experience-shape.png"
+                  alt="Experience.png"
+                />
+                <div class="card__title bold-m text-right">Experience</div>
+                <p class="card__description">
+                  Height in the atmosphere, for the sky was a dead black, and
+                  the stars had ceased to twinkle the same illusion which lifts.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="column column-lg-4 margin-b">
+              <div class="sc-2__card relative">
+                <img
+                  class="img-bg-shape absolute"
+                  src="./assets/img/Awards-bg-shape.png"
+                  alt="quality-bg-shape.png"
+                />
+                <img
+                  class="card__shape"
+                  src="./assets/img/Awards-shape.png"
+                  alt="Awards.png"
+                />
+                <div class="card__title bold-m text-right">Awards</div>
+                <p class="card__description">
+                  In the atmosphere, for the sky was a dead black, and the stars
+                  had ceased to twinkle the same illusion which lifts.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="stories-section">
-      <div class="container">
-        <div class="row">
-          <div class="column text-center">
-            <h5 class="stories__heading heading-5">Our Stories</h5>
-            <h2 class="stories__title-description heading-2">Case Studies</h2>
-            <p class="stories__subtitle-description text_big">
+      <section id="service-section">
+        <div class="container">
+          <div class="service__heading column text-center">
+            <h5 class="service__head heading-5">Our Service</h5>
+            <h1 class="service__title-description heading-2">
+              Service Offering
+            </h1>
+            <p class="service__subtitle-description text_big">
               The sky was cloudless and of a deep dark blue. The spectacle
               before us was indeed sublime.
             </p>
           </div>
-          <div class="column column-lg-6 text-center">
-            <img
-              class="stories__image"
-              src="./assets/img/stories-image-1.png"
-              alt="stories-image-1.png"
-            />
-            <div class="stories__content">
-              <div class="stories__content-title"></div>
-            </div>
-          </div>
-          <div class="column column-lg-6"></div>
-        </div>
-
-        <div class="stories-slider text-center">
-          <input type="radio" name="stories-slider" class="story-slider" />
-          <input type="radio" name="stories-slider" class="story-slider" />
-          <input type="radio" name="stories-slider" class="story-slider" />
-          <input type="radio" name="stories-slider" class="story-slider" />
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonial-section">
-      <div class="container overflow-unset-lg">
-        <div class="row flex-wrap">
-          <div class="column column-lg-6 text-center relative">
-            <div class="bg-testimonial absolute"></div>
-            <img
-              class="testimonials-image"
-              src="./assets/img/testimonies__image.png"
-              alt="testimonials-image.png"
-            />
-          </div>
-          <div class="column column-lg-6">
-            <div class="testimonials-div">
-              <h5 class="testimonials__heading heading-5">Testimonials</h5>
-              <h1 class="testimonials__title-description heading-2">
-                What people say about
-              </h1>
-              <p class="testimonials__subtitle-description text_big">
-                "The sky was cloudless and of a deep dark blue. The spectacle
-                before us was indeed sublime. The sky was cloudless and of a
-                deep dark blue. The spectacle before us was indeed sublime."
-              </p>
-
-              <div class="testimonials__profile d-flex">
-                <img
-                  class="testimonials__profile-picture"
-                  src="./assets/img/testimonial-profile-picture.png"
-                  alt="testimonial-profile-pic.png"
-                />
-                <div class="testimonial__profile-content">
-                  <div class="testimonials__profile-name heading-4">
-                    Leming Saton
-                  </div>
-                  <div class="testimonials__profile-social text">Facebook</div>
+          <div class="column">
+            <div class="services__content-cards d-grid">
+              <div class="grid column service-card bg-color-1 relative">
+                <div class="service-img image-1"></div>
+                <div class="absolute service-text heading-3">
+                  <h4>Corporate</h4>
+                </div>
+              </div>
+              <div class="grid column service-card bg-color-2 relative">
+                <div class="service-img image-2"></div>
+                <div class="absolute service-text heading-4">
+                  <h4>Privacy Policy</h4>
+                </div>
+              </div>
+              <div class="grid column service-card bg-color-3 relative">
+                <div class="service-img image-3"></div>
+                <div class="absolute service-text heading-4">
+                  <h4>Employment</h4>
+                </div>
+              </div>
+              <div class="grid column service-card bg-color-4 relative">
+                <div class="service-img image-4"></div>
+                <div class="absolute service-text heading-4">
+                  <h4>Intellectual</h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="consultation-section" class="relative">
-      <div class="bg-color-sc"></div>
-      <div class="container bg-solid-color">
-        <div class="row">
-          <div class="column column-lg-6">
-            <div class="consultation-form bg-solid-color">
-              <div class="consultation__head heading-4">Get Consultation</div>
-              <div class="consultation__sub-head text">
+      <section id="clients-section">
+        <div class="container">
+          <div class="row flex-center">
+            <div class="column text-center">
+              <div class="clients__sub-heading heading-5">Our Clients</div>
+              <div class="clients__heading heading-3">
+                Companies that know me well confirm that I am a great lawyer
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column d-flex flex-wrap flex-center flex-around">
+              <img
+                class="clients__company"
+                src="./assets/img/Atlassian.png"
+                alt="Atlassian.png"
+              />
+              <img
+                class="clients__company"
+                src="./assets/img/Slack.png"
+                alt="Slack.png"
+              />
+              <img
+                class="clients__company"
+                src="./assets/img/Dropbox.png"
+                alt="Dropbox.png"
+              />
+              <img
+                class="clients__company"
+                src="./assets/img/Shopify.png"
+                alt="Shopify.png"
+              />
+              <img
+                class="clients__company"
+                src="./assets/img/Google.png"
+                alt="Google.png"
+              />
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="#" class="btn btn-m button-primary">Appointment</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-section">
+        <div class="container">
+          <div class="row flex-wrap flex-center flex-row-reverse">
+            <div class="column column-lg-6 text-center">
+              <img
+                class="about__image"
+                src="./assets/img/about__image.png"
+                alt="about-image.png"
+              />
+            </div>
+            <div class="column column-lg-6">
+              <div class="mx-auto">
+                <h5 class="about__company__name heading-5">About</h5>
+                <h2 class="about__title-description heading-3">
+                  Justice is Valuable
+                </h2>
+                <p class="about__subtitle-description text_big">
+                  The sky was cloudless and of a deep dark blue. The spectacle
+                  before us was indeed sublime.
+                </p>
+                <a href="#" class="btn btn-m button-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stats-section">
+        <div class="container bg-color-3 text-center">
+          <div class="row">
+            <div class="column column-md-4 column-lg-4">
+              <div class="heading-2">100+</div>
+              <div class="text_big">Clients</div>
+            </div>
+            <div class="column column-md-4 column-lg-4">
+              <div class="heading-2">99%</div>
+              <div class="text_big">Winning Cases</div>
+            </div>
+            <div class="column column-md-4 column-lg-4">
+              <div class="heading-2">73k</div>
+              <div class="text_big">Recovered Money</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stories-section">
+        <div class="container">
+          <div class="row">
+            <div class="column text-center">
+              <h5 class="stories__heading heading-5">Our Stories</h5>
+              <h2 class="stories__title-description heading-2">Case Studies</h2>
+              <p class="stories__subtitle-description text_big mx-auto">
                 The sky was cloudless and of a deep dark blue. The spectacle
-                before us was indeed.
-              </div>
-              <form class="consultation__forms form-group">
-                <input
-                  type="text"
-                  name="consultation-name"
-                  class="consultation-name"
-                  placeholder="Your Name"
-                />
-                <input
-                  type="text"
-                  name="consultation-email"
-                  class="consultation-email"
-                  placeholder="Your Email"
-                />
-                <textarea
-                  name="consultation-message"
-                  placeholder="Message"
-                ></textarea>
-
-                <a href="#" class="btn btn-m button-primary">Submit</a>
-              </form>
+                before us was indeed sublime.
+              </p>
             </div>
           </div>
-          <div class="column column-lg-6 bg-solid-color">
-            <div class="column bg-color-1">
-              <div class="consultation__contact">
-                <div class="consultation__contact-information-mobile d-flex">
-                  <div class="icon">
-                    <img
-                      class="shape"
-                      src="./assets/img/Phone-shape.png"
-                      alt="phone.png"
-                    />
-                  </div>
-                  <div class="consultation-information-mobile">
-                    <div class="consultation__phone-number heading-4">
-                      +1 (2345) 678-90-12
-                    </div>
-                    <div class="text__gray">
-                      The sky was cloudless and of a deep dark blue. The
-                      spectacle before us was indeed sublime.
+          <div class="row">
+            <div class="column">
+              <div class="carousel">
+                <div class="story-card relative">
+                  <img
+                    class="stories__image"
+                    src="./assets/img/stories-image-1.png"
+                    alt="stories-image-1.png"
+                  />
+                  <div class="stories__content absolute">
+                    <div class="stories__content-title heading-5">Finance</div>
+                    <div class="stories__content-subtitle heading-4">
+                      Working at the Investigation Department or continue
                     </div>
                   </div>
                 </div>
-                <div class="consultation__contact-information-mail d-flex">
-                  <div class="icon">
-                    <img
-                      class="shape"
-                      src="./assets/img/Mail-shape.png"
-                      alt="mail.png"
-                    />
-                  </div>
-                  <div class="consultation-information-email">
-                    <div class="consultation__email text_big">
-                      lawyer@company.com
+                <div class="story-card relative">
+                  <img
+                    class="stories__image"
+                    src="./assets/img/stories-image-2.png"
+                    alt="stories-image-1.png"
+                  />
+                  <div class="stories__content absolute">
+                    <div class="stories__content-title heading-5">Finance</div>
+                    <div class="stories__content-subtitle heading-4">
+                      Working at the Investigation Department or continue
                     </div>
-                    <div class="text__gray">
-                      The sky was cloudless and of a deep dark blue.
+                  </div>
+                </div>
+                <div class="story-card relative">
+                  <img
+                    class="stories__image"
+                    src="./assets/img/stories-image-1.png"
+                    alt="stories-image-1.png"
+                  />
+                  <div class="stories__content absolute">
+                    <div class="stories__content-title heading-5">Finance</div>
+                    <div class="stories__content-subtitle heading-4">
+                      Working at the Investigation Department or continue
+                    </div>
+                  </div>
+                </div>
+                <div class="story-card relative">
+                  <img
+                    class="stories__image"
+                    src="./assets/img/stories-image-2.png"
+                    alt="stories-image-1.png"
+                  />
+                  <div class="stories__content absolute">
+                    <div class="stories__content-title heading-5">Finance</div>
+                    <div class="stories__content-subtitle heading-4">
+                      Working at the Investigation Department or continue
+                    </div>
+                  </div>
+                </div>
+                <div class="story-card relative">
+                  <img
+                    class="stories__image"
+                    src="./assets/img/stories-image-1.png"
+                    alt="stories-image-1.png"
+                  />
+                  <div class="stories__content absolute">
+                    <div class="stories__content-title heading-5">Finance</div>
+                    <div class="stories__content-subtitle heading-4">
+                      Working at the Investigation Department or continue
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="column bg-color-2">
-              <div class="consultation__news-letter">
-                <div class="consultation__newsletter-head heading-4">
-                  News Letter
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial-section">
+        <div class="container">
+          <div class="row">
+            <div class="column column-lg-6 text-center relative">
+              <div class="bg-testimonial absolute"></div>
+              <img
+                class="testimonials-image"
+                src="./assets/img/testimonies__image.png"
+                alt="testimonials-image.png"
+              />
+            </div>
+            <div class="column column-lg-6">
+              <div class="testimonials-div">
+                <h5 class="testimonials__heading heading-5">Testimonials</h5>
+                <h1 class="testimonials__title-description heading-2">
+                  What People Say About
+                </h1>
+                <p class="testimonials__subtitle-description text_big">
+                  "The sky was cloudless and of a deep dark blue. The spectacle
+                  before us was indeed sublime. The sky was cloudless and of a
+                  deep dark blue. The spectacle before us was indeed sublime."
+                </p>
+
+                <div class="testimonials__profile d-flex">
+                  <img
+                    class="testimonials__profile-picture"
+                    src="./assets/img/testimonial-profile-picture.png"
+                    alt="testimonial-profile-pic.png"
+                  />
+                  <div class="testimonial__profile-content">
+                    <div class="testimonials__profile-name heading-4">
+                      Leming Saton
+                    </div>
+                    <div class="testimonials__profile-social text">
+                      Facebook
+                    </div>
+                  </div>
                 </div>
-                <div class="form d-flex">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="consultation-section" class="relative">
+        <div class="bg-color-sc"></div>
+        <div class="container bg-solid-color">
+          <div class="row">
+            <div class="column column-lg-6">
+              <div class="consultation-form bg-solid-color">
+                <div class="consultation__head heading-4">Get Consultation</div>
+                <div class="consultation__sub-head text">
+                  The sky was cloudless and of a deep dark blue. The spectacle
+                  before us was indeed.
+                </div>
+                <form class="consultation__forms form-group">
                   <input
                     type="text"
-                    name="news-letter-email"
-                    placeholder="Your Email"
-                    class="newsletter-email"
+                    name="consultation-name"
+                    class="consultation-name"
+                    placeholder="Your Name"
                   />
-                  <a href="#" class="btn btn-m button-primary">Subscribe</a>
+                  <input
+                    type="text"
+                    name="consultation-email"
+                    class="consultation-email"
+                    placeholder="Your Email"
+                  />
+                  <textarea
+                    name="consultation-message"
+                    placeholder="Message"
+                  ></textarea>
+
+                  <a href="#" class="btn btn-m button-primary">Submit</a>
+                </form>
+              </div>
+            </div>
+            <div class="column column-lg-6 bg-solid-color">
+              <div class="column bg-color-1">
+                <div class="consultation__contact">
+                  <div class="consultation__contact-information-mobile d-flex">
+                    <div class="icon">
+                      <img
+                        class="shape"
+                        src="./assets/img/Phone-shape.png"
+                        alt="phone.png"
+                      />
+                    </div>
+                    <div class="consultation-information-mobile">
+                      <div class="consultation__phone-number heading-4">
+                        +1 (2345) 678-90-12
+                      </div>
+                      <div class="text__gray">
+                        The sky was cloudless and of a deep dark blue. The
+                        spectacle before us was indeed sublime.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="consultation__contact-information-mail d-flex">
+                    <div class="icon">
+                      <img
+                        class="shape"
+                        src="./assets/img/Mail-shape.png"
+                        alt="mail.png"
+                      />
+                    </div>
+                    <div class="consultation-information-email">
+                      <div class="consultation__email text_big">
+                        lawyer@company.com
+                      </div>
+                      <div class="text__gray">
+                        The sky was cloudless and of a deep dark blue.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column bg-color-2">
+                <div class="consultation__news-letter">
+                  <div class="consultation__newsletter-head heading-4">
+                    News Letter
+                  </div>
+                  <div class="form d-flex">
+                    <input
+                      type="text"
+                      name="news-letter-email"
+                      placeholder="Your Email"
+                      class="newsletter-email"
+                    />
+                    <a href="#" class="btn btn-m button-primary">Subscribe</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="blog-section">
-      <div class="container">
-        <div class="row">
-          <div class="column column-sm-12 text-center">
-            <h5 class="blog__heading heading-5">Our Blog</h5>
-            <h1 class="blog__title-description heading-3">Latest Articles</h1>
-            <p class="blog__subtitle-description text_big">
-              The sky was cloudless and of a deep dark blue. The spectacle
-              before us was indeed sublime.
-            </p>
-          </div>
-        </div>
-        <div class="row flex-between">
-          <div class="column column-md-6 column-lg-4">
-            <div class="blog__card bg-color-1 relative">
-              <div class="blog__card-date text absolute">21 March 2020</div>
-              <img
-                class="blog__card-image"
-                src="./assets/img/blog-image-1.png"
-                alt="blog-image-1.png"
-              />
+      </section>
 
-              <div class="blog__content bg-solid-color">
-                <div class="heading-4">
-                  It was going to be a lonely trip back
+      <section id="blog-section">
+        <div class="container">
+          <div class="row">
+            <div class="column column-sm-12 text-center">
+              <h5 class="blog__heading heading-5">Our Blog</h5>
+              <h1 class="blog__title-description heading-3">Latest Articles</h1>
+              <p class="blog__subtitle-description text_big">
+                The sky was cloudless and of a deep dark blue. The spectacle
+                before us was indeed sublime.
+              </p>
+            </div>
+          </div>
+          <div class="row flex-between">
+            <div class="column column-md-6 column-lg-4">
+              <div class="blog__card relative">
+                <div class="blog__card-date text absolute">21 March 2020</div>
+                <img
+                  class="blog__card-image"
+                  src="./assets/img/blog-image-1.png"
+                  alt="blog-image-1.png"
+                />
+
+                <div class="blog__content bg-solid-color">
+                  <div class="heading-4">
+                    It was going to be a lonely trip back
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column column-md-6 column-lg-4">
+              <div class="blog__card relative">
+                <div class="blog__card-date text absolute">20 March 2020</div>
+                <img
+                  class="blog__card-image"
+                  src="./assets/img/blog-image-2.png"
+                  alt="blog-image-2.png"
+                />
+
+                <div class="blog__content bg-solid-color">
+                  <div class="heading-4">
+                    My two natures had memory in common
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column column-md-12 column-lg-4">
+              <div class="blog__card bg-color-4 relative">
+                <div class="blog__card-date text absolute">19 March 2020</div>
+                <img
+                  class="blog__card-image"
+                  src="./assets/img/blog-image-3.png"
+                  alt="blog-image-3.png"
+                />
+
+                <div class="blog__content bg-solid-color">
+                  <div class="heading-4">
+                    Silver mist suffused the deck of the ship
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="column column-md-6 column-lg-4">
-            <div class="blog__card bg-color-3 relative">
-              <div class="blog__card-date text absolute">20 March 2020</div>
-              <img
-                class="blog__card-image"
-                src="./assets/img/blog-image-2.png"
-                alt="blog-image-2.png"
-              />
-
-              <div class="blog__content bg-solid-color">
-                <div class="heading-4">My two natures had memory in common</div>
-              </div>
-            </div>
-          </div>
-          <div class="column column-md-12 column-lg-4">
-            <div class="blog__card bg-color-4 relative">
-              <div class="blog__card-date text absolute">19 March 2020</div>
-              <img
-                class="blog__card-image"
-                src="./assets/img/blog-image-3.png"
-                alt="blog-image-3.png"
-              />
-
-              <div class="blog__content bg-solid-color">
-                <div class="heading-4">
-                  Silver mist suffused the deck of the ship
-                </div>
-              </div>
-            </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-m button-tertiary">Explore Blog</a>
           </div>
         </div>
-        <div class="text-center">
-          <a href="#" class="btn btn-m button-tertiary">Explore Blog</a>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
       <div class="container">
@@ -573,5 +640,20 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+      var elem = document.querySelector(".carousel");
+      var flkty = new Flickity(elem, {
+        // options
+        cellAlign: "left",
+        contain: true,
+      });
+
+      // element argument can be a selector string
+      //   for an individual element
+      var flkty = new Flickity(".carousel", {
+        // options
+      });
+    </script>
   </body>
 </html>

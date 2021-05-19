@@ -1,6 +1,8 @@
 footer {
   padding-left: 23px;
   padding-right: 23px;
+  padding-top: 91px;
+  padding-bottom: 69px;
   background-color: #333333;
 
   .d-flex {
@@ -14,7 +16,6 @@ footer {
   }
 
   .logo {
-    margin-top: 90px;
     margin-bottom: 21px;
   }
 
@@ -65,10 +66,8 @@ footer {
   }
 
   @media screen and (min-width: 992px) {
-    .container {
-      padding-top: 90px;
-      padding-bottom: 53px;
-    }
+    padding-top: 90px;
+    padding-bottom: 53px;
 
     .logo {
       margin-top: 0;

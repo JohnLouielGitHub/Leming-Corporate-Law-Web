@@ -83,15 +83,49 @@
   z-index: -1;
   background-color: #495d4d;
   width: 100%;
-  height: 2800px;
+  height: 3000px;
   position: absolute;
   top: 128px;
   left: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .bg-color-sc {
+    height: 2800px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .bg-color-sc {
     height: 1600px;
+  }
+}
+
+.bg-color-sc-1 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 4103px;
+  left: 0px;
+  top: 176px;
+  background: #f9e5e1;
+}
+
+@media screen and (min-width: 576px) {
+  .bg-color-sc-1 {
+    height: 3954px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bg-color-sc-1 {
+    height: 3086px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bg-color-sc-1 {
+    height: 2064px;
   }
 }
 
@@ -151,6 +185,49 @@
 
 .h100 {
   height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.myfilter {
+  position: relative;
+}
+
+.myfilter:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #e2b358;
+  mix-blend-mode: overlay;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 0px;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  background: #fff0dd;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: #e2b358;
+}
+
+.mx-auto {
+  margin: 0 auto;
 }
 
 html {
@@ -733,6 +810,8 @@ a:hover {
 footer {
   padding-left: 23px;
   padding-right: 23px;
+  padding-top: 91px;
+  padding-bottom: 69px;
   background-color: #333333;
 }
 
@@ -747,7 +826,6 @@ footer .copyright-container {
 }
 
 footer .logo {
-  margin-top: 90px;
   margin-bottom: 21px;
 }
 
@@ -805,7 +883,7 @@ footer a:hover {
 }
 
 @media screen and (min-width: 992px) {
-  footer .container {
+  footer {
     padding-top: 90px;
     padding-bottom: 53px;
   }
@@ -1468,6 +1546,21 @@ textarea {
   padding-left: 8px;
 }
 
+#stories-section .carousel {
+  height: 100%;
+  max-height: 592px;
+  margin-bottom: 96px;
+}
+
+#stories-section .story-card {
+  max-width: 570px;
+  width: 100%;
+  min-height: 592px;
+  height: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 #stories-section .stories__heading {
   margin-bottom: 1.25rem;
 }
@@ -1477,63 +1570,106 @@ textarea {
 }
 
 #stories-section .stories__subtitle-description {
-  margin-bottom: 3.5rem;
+  margin-bottom: 4.9375rem;
 }
 
 #stories-section .stories__image {
   max-width: 300px;
-}
-
-#stories-section .stories-slider {
-  margin-bottom: 96px;
+  margin-bottom: 239px;
 }
 
 #stories-section .stories__content {
-  z-index: 3;
+  padding-right: 28px;
+  padding-left: 56px;
+  padding-top: 42px;
+  padding-bottom: 48px;
+  color: #333333;
   background-color: #fff;
-  top: 256px;
-  left: 51px;
-  padding: 42px 28px 48px 48px;
   border-radius: 1rem;
-  box-shadow: 8px 11px 15px -1px rgba(0, 0, 0, 0.41);
-  -webkit-box-shadow: 8px 11px 15px -1px rgba(0, 0, 0, 0.41);
-  -moz-box-shadow: 8px 11px 15px -1px rgba(0, 0, 0, 0.41);
-  margin-bottom: 64px;
+  top: 256px;
+  left: 28px;
+  -webkit-box-shadow: 0px 24px 64px rgba(41, 15, 0, 0.0985337);
+          box-shadow: 0px 24px 64px rgba(41, 15, 0, 0.0985337);
+  border-radius: 16px;
 }
 
-#stories-section .stories__content .stories__content-title {
+#stories-section .stories__content-title {
   margin-bottom: 6px;
 }
 
-#stories-section .stories__content .stories__content-subtitle {
-  max-width: 313px;
+@media screen and (min-width: 992px) {
+  #stories-section .column {
+    padding: 0 30px;
+  }
+  #stories-section .column:last-of-type {
+    display: block;
+  }
+  #stories-section .carousel {
+    height: 100%;
+    max-height: 672px;
+    margin-bottom: 96px;
+  }
+  #stories-section .story-card {
+    max-width: 518px;
+    width: 100%;
+    min-height: 672px;
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #stories-section .stories__heading {
+    margin-bottom: 1.25rem;
+  }
+  #stories-section .stories__title-description {
+    margin-bottom: 1.75rem;
+  }
+  #stories-section .stories__subtitle-description {
+    max-width: 570px;
+    margin-bottom: 3.5rem;
+  }
+  #stories-section .stories__image {
+    max-width: 470px;
+    margin-bottom: 176px;
+  }
+  #stories-section .stories__content {
+    padding-right: 28px;
+    padding-left: 56px;
+    padding-top: 42px;
+    padding-bottom: 48px;
+    max-width: 470px;
+    color: #333333;
+    background-color: #fff;
+    border-radius: 1rem;
+    top: 400px;
+    left: 68px;
+  }
+  #stories-section .stories__content-title {
+    margin-bottom: 6px;
+  }
+  #stories-section .stories-slider {
+    margin-bottom: 144px;
+  }
 }
 
 #testimonial-section {
   padding-left: 8px;
   padding-right: 8px;
-  margin-bottom: 208px;
+  margin-bottom: 128px;
 }
 
 #testimonial-section .bg-testimonial {
   background-color: #fff0dd;
   width: 50vw;
-  height: 1500px;
+  height: 1900px;
   top: 0;
   right: calc(50%);
   border-top-right-radius: 100px;
   z-index: -1;
 }
 
-@media screen and (min-width: 992px) {
-  #testimonial-section .bg-testimonial {
-    width: 100%;
-    left: 0;
-  }
-}
-
 #testimonial-section .testimonials-image {
   max-width: 330px;
+  width: 100%;
   padding-top: 128px;
   margin-bottom: 3.1875rem;
 }
@@ -1554,7 +1690,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 128px;
 }
 
 #testimonial-section .testimonials__profile-picture {
@@ -1570,27 +1705,41 @@ textarea {
   margin-bottom: 0.125rem;
 }
 
-@media screen and (min-width: 992px) {
-  #testimonial-section .testimonials-div {
-    margin-left: 45px;
+@media screen and (min-width: 768px) {
+  #testimonial-section {
+    margin-bottom: 208px;
   }
   #testimonial-section .testimonials-image {
     max-width: 570px;
+    padding-top: 176px;
+    margin-bottom: 0;
   }
   #testimonial-section .testimonials__heading {
-    max-width: 331px;
-    margin-top: 2.625rem;
     margin-bottom: 1.25rem;
   }
   #testimonial-section .testimonials__title-description {
+    max-width: 331px;
     margin-bottom: 1.75rem;
   }
   #testimonial-section .testimonials__subtitle-description {
     color: #333333;
-    margin-bottom: 2.1875rem;
+    margin-bottom: 35px;
   }
   #testimonial-section .testimonials__profile-social {
+    margin-bottom: 0;
     color: #33333380;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #testimonial-section .testimonials-div {
+    max-width: 470px;
+    margin-left: 45px;
+    margin-top: 220px;
+  }
+  #testimonial-section .bg-testimonial {
+    width: 50vw;
+    right: calc(50%);
   }
 }
 

@@ -65,14 +65,49 @@
   z-index: -1;
   background-color: #495d4d;
   width: 100%;
-  height: 2800px;
+  height: 3000px;
   position: absolute;
   top: 128px;
   left: 0;
 }
+
+@media screen and (min-width: 768px) {
+  .bg-color-sc {
+    height: 2800px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .bg-color-sc {
     height: 1600px;
+  }
+}
+
+.bg-color-sc-1 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 4103px;
+  left: 0px;
+  top: 176px;
+  background: #f9e5e1;
+}
+
+@media screen and (min-width: 576px) {
+  .bg-color-sc-1 {
+    height: 3954px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bg-color-sc-1 {
+    height: 3086px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bg-color-sc-1 {
+    height: 2064px;
   }
 }
 
@@ -130,4 +165,47 @@
 
 .h100 {
   height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.myfilter {
+  position: relative;
+}
+
+.myfilter:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background: rgb(226, 179, 88);
+
+  mix-blend-mode: overlay;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  background: #fff0dd;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: #e2b358;
+}
+
+.mx-auto {
+  margin: 0 auto;
 }

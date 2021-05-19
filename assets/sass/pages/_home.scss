@@ -3,7 +3,7 @@ textarea {
   outline: 0;
 }
 
-#section-1 {
+#hero-section {
   margin-bottom: 126px;
   z-index: 5;
 
@@ -31,8 +31,8 @@ textarea {
   }
 }
 
-#section-1,
-#section-5 {
+#hero-section,
+#about-section {
   .row {
     height: 100%;
     align-items: center;
@@ -74,11 +74,11 @@ textarea {
   max-width: 330px;
 }
 
-// End of section-1 ----------------------//
+// End of hero-section ----------------------//
 
-#section-2 {
-  margin-left: 23px;
-  margin-right: 23px;
+#quality-section {
+  padding-left: 8px;
+  padding-right: 8px;
   margin-bottom: 154px;
 
   .img-bg-shape {
@@ -136,7 +136,7 @@ textarea {
   }
 }
 
-#section-3 {
+#service-section {
   .column {
     padding: 0 0;
     margin-bottom: 10.625rem;
@@ -310,9 +310,10 @@ textarea {
   }
 }
 
-#section-4 {
-  margin-left: 23px;
-  margin-right: 23px;
+#clients-section {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 160px;
 
   @media screen and (min-width: 576px) {
     .heading-3 {
@@ -339,9 +340,9 @@ textarea {
   }
 }
 
-#section-5 {
-  margin-left: 23px;
-  margin-right: 23px;
+#about-section {
+  padding-left: 8px;
+  padding-right: 8px;
   margin-bottom: 14.0625rem;
 
   .about__company__name {
@@ -375,7 +376,7 @@ textarea {
   }
 }
 
-#section-6 {
+#stats-section {
   margin-right: 23px;
   margin-left: 23px;
   margin-bottom: 122px;
@@ -393,7 +394,7 @@ textarea {
     padding: 78px 92px;
   }
 
-  .column {
+  .column:not(:nth-last-of-type()) {
     margin-bottom: 68px;
   }
 
@@ -405,26 +406,10 @@ textarea {
   }
 }
 
-#section-7 {
-  margin-right: 23px;
-  margin-left: 23px;
+#stories-section {
+  padding-right: 8px;
+  padding-left: 8px;
 
-  .row {
-    margin-bottom: 176px;
-  }
-
-  .stories-slider {
-    margin-bottom: 144px;
-  }
-
-  .column:nth-of-type(2) {
-    .text-center {
-      text-align: left;
-    }
-  }
-  .column:nth-of-type(3) {
-    display: none;
-  }
   .stories__heading {
     margin-bottom: 1.25rem;
   }
@@ -436,8 +421,11 @@ textarea {
   }
 
   .stories__image {
-    z-index: 1;
     max-width: 300px;
+  }
+
+  .stories-slider {
+    margin-bottom: 96px;
   }
 
   .stories__content {
@@ -450,6 +438,7 @@ textarea {
     box-shadow: 8px 11px 15px -1px rgba(0, 0, 0, 0.41);
     -webkit-box-shadow: 8px 11px 15px -1px rgba(0, 0, 0, 0.41);
     -moz-box-shadow: 8px 11px 15px -1px rgba(0, 0, 0, 0.41);
+    margin-bottom: 64px;
 
     .stories__content-title {
       margin-bottom: 6px;
@@ -458,49 +447,33 @@ textarea {
       max-width: 313px;
     }
   }
-
-  @media screen and (min-width: 576px) {
-    .column:nth-of-type(2) {
-      .text-center {
-        text-align: left;
-      }
-    }
-
-    .relative {
-      margin-left: 23px;
-      margin-right: 23px;
-    }
-
-    .stories__image {
-      z-index: 1;
-      max-width: 470px;
-    }
-
-    .stories__content {
-      top: 400px;
-      left: 48px;
-      padding: 56px 122px 42px 48px;
-    }
-
-    .stories__subtitle-description {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 570px;
-    }
-  }
-  @media screen and (min-width: 992px) {
-    .column:nth-of-type(3) {
-      display: block;
-    }
-  }
 }
 
-#section-8 {
-  margin-left: 23px;
-  margin-right: 23px;
+#testimonial-section {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 208px;
+
+  .bg-testimonial {
+    background-color: #fff0dd;
+    width: 50vw;
+    height: 1500px;
+    top: 0;
+    right: calc(50%);
+    border-top-right-radius: 100px;
+    z-index: -1;
+  }
+
+  @media screen and (min-width: 992px) {
+    .bg-testimonial {
+      width: 100%;
+      left: 0;
+    }
+  }
 
   .testimonials-image {
     max-width: 330px;
+    padding-top: 128px;
     margin-bottom: 3.1875rem;
   }
   .testimonials__heading {
@@ -556,16 +529,18 @@ textarea {
   }
 }
 
-#section-9 {
+#consultation-section {
   padding-left: 23px;
   padding-right: 23px;
   margin-bottom: 154px;
 
   .container {
-    box-shadow: 3px 2px 22px 2px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 3px 2px 22px 2px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 3px 2px 22px 2px rgba(0, 0, 0, 1);
     border-radius: 1rem;
+  }
+
+  .column {
+    padding: 0 0;
+    margin-top: 0;
   }
 
   input,
@@ -582,7 +557,8 @@ textarea {
     border-top-right-radius: 1rem;
   }
 
-  .bg-color-2 {
+  .bg-color-2,
+  .bg-solid-color {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
   }
@@ -592,6 +568,13 @@ textarea {
     padding-bottom: 4rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+  }
+
+  .consultation-form,
+  .consultation__contact,
+  .consultation__news-letter {
+    padding-left: 28px;
+    padding-right: 28px;
   }
 
   .consultation__head {
@@ -607,6 +590,10 @@ textarea {
     padding-bottom: 5.3125rem;
   }
 
+  .consultation__contact-information-mobile {
+    margin-bottom: 40px;
+  }
+
   .consultation__news-letter {
     padding-top: 3.5rem;
     padding-bottom: 4rem;
@@ -615,70 +602,45 @@ textarea {
     }
   }
 
-  .consultation-form,
-  .consultation__contact-information-mobile,
-  .consultation__contact-information-mail,
-  .consultation__news-letter {
-    padding-left: 28px;
-    padding-right: 28px;
+  .icon {
+    margin-right: 1rem;
+  }
 
-    .consultation-name {
-      margin-bottom: 1.0625rem;
-    }
+  .shape {
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #333333;
+    object-fit: contain;
+  }
 
-    .consultation-email {
-      margin-bottom: 1rem;
-    }
+  textarea,
+  .consultation-name,
+  .consultation-email,
+  .consultation__head,
+  .newsletter-email {
+    margin-bottom: 1rem;
+  }
 
-    textarea {
-      margin-bottom: 1rem;
-      height: 96px;
-    }
+  textarea {
+    height: 96px;
+  }
 
-    .icon {
-      margin-right: 1rem;
-    }
-
-    .shape {
-      padding: 12px;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background-color: #333333;
-      object-fit: contain;
-    }
-
-    .consultation-information-mobile {
-      margin-bottom: 2.5rem;
-
-      .consultation__phone-number {
-        margin-bottom: 1.1875rem;
-      }
-    }
-
-    .consultation__contact-information-mail {
-      margin-bottom: 5.3125rem;
-
-      .consultation__email {
-        margin-bottom: 1px;
-      }
-    }
-
-    .consultation__newsletter-head {
-      color: $color-white;
-      margin-bottom: 1.75rem;
+  .consultation__newsletter-head {
+    color: $color-white;
+    margin-bottom: 1.75rem;
+  }
+  @media screen and (min-width: 576px) {
+    .newsletter-email {
+      margin-bottom: 0;
+      margin-right: 17px;
     }
 
     .consultation__news-letter {
-      margin-bottom: 1.75rem;
-    }
-
-    .newsletter-email {
-      width: 100%;
-    }
-
-    .newsletter-btn {
-      padding: 1rem 2.0625rem 1rem 2.0625rem;
+      .d-flex {
+        display: flex;
+      }
     }
   }
 
@@ -705,90 +667,67 @@ textarea {
     .bg-solid-color {
       border-top-left-radius: 1rem;
       border-bottom-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
     }
 
     .consultation-form {
-      padding-top: 4.6875rem;
+      padding-top: 75px;
       padding-bottom: 80px;
+      padding-left: 64px;
+      padding-right: 65px;
     }
 
     .consultation__sub-head {
-      margin-bottom: 2.3125rem;
+      margin-bottom: 37px;
     }
 
     .consultation-name {
-      margin-bottom: 1.0625rem;
+      margin-bottom: 17px;
     }
 
-    .consultation-email {
+    textarea,
+    .consultation-email,
+    .consultation__head {
       margin-bottom: 1rem;
-    }
-
-    textarea {
-      margin-bottom: 1rem;
-      height: 96px;
-    }
-
-    .consultation-form,
-    .consultation__contact-information-mobile,
-    .consultation__contact-information-mail,
-    .consultation__news-letter {
-      padding-left: 4rem;
-      padding-right: 4rem;
-    }
-
-    .consultation-information-mobile {
-      margin-bottom: 1.5rem;
-
-      .consultation__phone-number {
-        margin-bottom: 1.1875rem;
-      }
-    }
-
-    .newsletter-email {
-      max-width: 302px;
-      margin-right: 1.1rem;
     }
 
     .consultation__contact {
-      padding-top: 4.6875rem;
-      padding-bottom: 4.25rem;
+      padding-top: 75px;
+      padding-bottom: 86px;
+      padding-left: 64px;
+      padding-right: 83px;
     }
 
-    .consultation-btn {
-      display: block;
-      width: 170px;
+    .consultation__contact-information-mobile {
+      margin-bottom: 24px;
     }
 
     .consultation__news-letter {
-      .form {
-        height: 48px;
-      }
+      padding-top: 44px;
+      padding-bottom: 80px;
+      padding-left: 64px;
+      padding-right: 64px;
 
       .d-flex {
         display: flex;
       }
     }
-
-    .newsletter-btn {
-      line-height: 16.1px;
-      text-align: center;
-      padding: 1rem 2.0625rem 1rem 2.0625rem;
-      width: 138px;
-    }
   }
 }
 
-// section-9 is broken
-
-#section-10 {
-  // heading - blog section
-  margin-left: 23px;
-  margin-right: 23px;
-  margin-bottom: 128px;
+#blog-section {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 144px;
 
   .blog__heading {
     margin-bottom: 17px;
+  }
+
+  .blog__title-description,
+  .blog__subtitle-description {
+    color: $color-white;
   }
 
   .blog__title-description {
@@ -799,138 +738,69 @@ textarea {
     margin-bottom: 64px;
   }
 
+  .blog__card-date {
+    top: 32px;
+    left: 25px;
+    background-color: rgba(0, 0, 0, 0.41);
+    padding: 0 10px;
+    border-radius: 0.5rem;
+    color: $color-white;
+  }
+
   .blog__card {
-    box-shadow: 3px 2px 22px 2px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 3px 2px 22px 2px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 3px 2px 22px 2px rgba(0, 0, 0, 1);
     overflow-x: hidden;
     border-radius: 1rem;
-    margin: 0 auto;
     width: 100%;
-    max-width: 330px;
-    margin-bottom: 64px;
+    max-width: 329px;
+    margin: 0 auto;
+    margin-bottom: 2px;
+  }
 
-    img {
-      object-fit: cover;
+  .blog__card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+  }
+
+  .blog__content {
+    padding: 18px 32px;
+  }
+
+  .button-tertiary {
+    margin-top: 64px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-bottom: 128px;
+
+    .heading-3 {
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+
+    .blog__heading {
+      margin-bottom: 20px;
+    }
+
+    .blog__title-description {
+      margin-bottom: 28px;
+    }
+
+    .blog__subtitle-description {
+      margin-bottom: 76px;
+    }
+
+    .blog__card {
+      max-width: 370px;
     }
 
     .blog__content {
       padding: 18px 32px;
     }
-  }
 
-  @media screen and (min-width: 992px) {
-    .blog__heading {
-      margin-bottom: 20px;
-    }
-    .blog__title-description {
-      margin-bottom: 28px;
-    }
-    .blog__subtitle-description {
-      margin-bottom: 76px;
-    }
-    .blog__card {
-      margin-bottom: 80px;
-      max-width: 370px;
-    }
-  }
-}
-
-footer {
-  padding-left: 23px;
-  padding-right: 23px;
-  background-color: #333333;
-
-  .d-flex {
-    display: block;
-  }
-
-  .copyright-container {
-    width: 100%;
-    border-top: 1px solid black;
-    margin-top: 69px;
-  }
-
-  .logo {
-    margin-top: 90px;
-    margin-bottom: 21px;
-  }
-
-  .footer-logo {
-    border: 1px solid $color-white;
-    border-radius: 50%;
-    width: 48px;
-  }
-
-  .icons {
-    display: flex;
-    margin-bottom: 74px;
-
-    .footer-social-icon {
-      width: 48px;
-      height: 48px;
-      background-color: #495d4d;
-      border-radius: 50%;
-      margin-right: 8px;
-    }
-    .social-icon {
-      padding: 1rem;
-      text-align: center;
-      object-fit: contain;
-    }
-  }
-
-  ul {
-    display: block;
-    margin-bottom: 63px;
-  }
-  li a,
-  li,
-  .terms a {
-    color: $color-white;
-  }
-
-  a:hover {
-    color: $color-gray-dark;
-  }
-
-  @media screen and (min-width: 768px) {
-    .d-flex {
-      display: flex;
-    }
-    .column-md-6:nth-of-type(2) {
-      margin-top: 90px;
-    }
-  }
-
-  @media screen and (min-width: 992px) {
-    .container {
-      padding-top: 90px;
-      padding-bottom: 53px;
-    }
-
-    .column-md-6:nth-of-type(2) {
-      margin-top: 0;
-    }
-
-    .logo {
-      margin-top: 0;
-      margin-bottom: 21px;
-    }
-    .icons {
-      margin-bottom: 1.3125rem;
-    }
-
-    .heading-5 {
-      margin-bottom: 17px;
-    }
-
-    .margin-b {
-      margin-bottom: 62px;
-    }
-
-    .margin-t {
-      margin-top: 42px;
+    .button-tertiary {
+      margin-top: 80px;
     }
   }
 }

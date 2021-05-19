@@ -54,21 +54,27 @@
   position: absolute;
 }
 
-.bg-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-// .bg-color-sc {
-//   z-index: -1;
-//   background-color: #495d4d;
+// .bg-image {
+//   background-size: cover;
+//   background-repeat: no-repeat;
 //   width: 100%;
 //   height: 100%;
-//   position: absolute;
-//   max-width: 1400px;
 // }
+
+.bg-color-sc {
+  z-index: -1;
+  background-color: #495d4d;
+  width: 100%;
+  height: 2800px;
+  position: absolute;
+  top: 128px;
+  left: 0;
+}
+@media screen and (min-width: 992px) {
+  .bg-color-sc {
+    height: 1600px;
+  }
+}
 
 .bg-solid-color {
   background-color: #fff;

@@ -243,6 +243,10 @@ body {
   text-decoration: none;
 }
 
+* a:hover {
+  color: #e67337;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -772,38 +776,49 @@ header {
   padding: 0 15px;
 }
 
-header .container {
+.container {
   margin-top: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-header .nav-menu,
-header a {
+.nav-menu,
+.header-btn {
   display: none;
+}
+
+.ham-btn:checked .nav-menu {
+  display: block;
+}
+
+a {
   color: #110f24;
 }
 
-header a:hover {
+a:hover {
   color: #333333;
 }
 
-header .header-logo {
+.header-logo {
   width: 156px;
   height: 56px;
 }
 
 @media screen and (min-width: 768px) {
-  header .nav-menu {
+  .ham-btn {
+    display: none;
+  }
+  .nav-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  header .nav-menu li:not(:last-child) {
+  .nav-menu li:not(:last-child) {
     margin-right: 48px;
   }
-  header a {
+  .header-btn,
+  a {
     display: inline-block;
   }
 }
@@ -867,10 +882,6 @@ footer li,
 footer .copyright-container,
 footer .terms a {
   color: #fff;
-}
-
-footer a:hover {
-  color: #cccccf;
 }
 
 @media screen and (min-width: 768px) {
@@ -1022,14 +1033,10 @@ footer a:hover {
   background-color: transparent;
 }
 
-.button-light a {
-  color: #110f24;
-}
-
 .button-light:hover {
   background-color: #fff;
   cursor: pointer;
-  color: #333333;
+  color: #e67337;
 }
 
 .button-primary {
@@ -1046,15 +1053,12 @@ footer a:hover {
 }
 
 .button-primary:hover {
-  background-color: #333333;
-  color: #fff;
+  background-color: #cccccf;
+  color: #333333;
   cursor: pointer;
 }
 
 .button-secondary {
-  font-family: Caladea;
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   padding: 16px 30px 16px 30px;
@@ -1072,9 +1076,6 @@ footer a:hover {
 }
 
 .button-tertiary {
-  font-family: Caladea;
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   padding: 16px 30px 16px 30px;
@@ -1091,7 +1092,6 @@ footer a:hover {
   color: #fff;
 }
 
-.button-light,
 .button-primary,
 .button-secondary,
 .button-tertiary {
@@ -1346,7 +1346,21 @@ section {
   color: #333333;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
+  #quality-section .sc-2__card {
+    max-width: 310px;
+    width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 56px;
+    padding-bottom: 37px;
+  }
+  #quality-section .card__description {
+    max-height: 105px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   #quality-section .sc-2__card {
     max-width: 370px;
     width: 100%;

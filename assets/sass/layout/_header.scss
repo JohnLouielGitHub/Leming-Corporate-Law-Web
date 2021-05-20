@@ -4,37 +4,50 @@ header {
   width: 100%;
   z-index: 2;
   padding: 0 15px;
+}
 
-  .container {
-    margin-top: 1rem;
-    align-items: center;
+.container {
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.nav-menu,
+.header-btn {
+  display: none;
+}
+
+.ham-btn:checked {
+  .nav-menu {
+    display: block;
   }
+}
 
-  .nav-menu,
-  a {
+a {
+  color: $color-text;
+}
+
+a:hover {
+  color: $color-gray-dark;
+}
+
+.header-logo {
+  width: 156px;
+  height: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .ham-btn {
     display: none;
-    color: $color-text;
   }
+  .nav-menu {
+    display: flex;
 
-  a:hover {
-    color: $color-gray-dark;
-  }
-
-  .header-logo {
-    width: 156px;
-    height: 56px;
-  }
-
-  @media screen and (min-width: 768px) {
-    .nav-menu {
-      display: flex;
-
-      li:not(:last-child) {
-        margin-right: 48px;
-      }
+    li:not(:last-child) {
+      margin-right: 48px;
     }
-    a {
-      display: inline-block;
-    }
+  }
+  .header-btn,
+  a {
+    display: inline-block;
   }
 }

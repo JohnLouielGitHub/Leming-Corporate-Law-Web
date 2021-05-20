@@ -24,23 +24,36 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container d-flex flex-between">
         <img
           class="header-logo"
           src="./assets/img/logo-dark-horizontal.svg"
           alt="logo-dark-horizontal.svg"
         />
-
         <nav>
           <ul class="nav-menu">
-            <li class="nav-menu__link text"><a href="#">About</a></li>
-            <li class="nav-menu__link text"><a href="#">Cases</a></li>
-            <li class="nav-menu__link text"><a href="#">Blog</a></li>
-            <li class="nav-menu__link text"><a href="#">Contact</a></li>
+            <li class="nav-menu__link text">
+              <a href="#about-section">About</a>
+            </li>
+            <li class="nav-menu__link text">
+              <a href="#stories-section">Cases</a>
+            </li>
+            <li class="nav-menu__link text">
+              <a href="#blog-section">Blog</a>
+            </li>
+            <li class="nav-menu__link text">
+              <a href="#consultation-section">Contact</a>
+            </li>
           </ul>
         </nav>
-        <a class="button-light" href="#">Appointment</a>
+        <a class="header-btn button-light" href="#">Appointment</a>
+        <input
+          type="checkbox"
+          name="nav"
+          id="ham-menu"
+          class="ham-btn d-none"
+        />
       </div>
     </header>
 
@@ -664,6 +677,7 @@
         </div>
       </div>
     </footer>
+
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
       var elem = document.querySelector(".carousel");

@@ -130,7 +130,7 @@ section {
     }
 
     a {
-      color: #333333;
+      color: $color-gray-dark;
       line-height: 2rem;
       display: block;
     }
@@ -447,12 +447,12 @@ section {
     padding-left: 56px;
     padding-top: 42px;
     padding-bottom: 48px;
-    color: #333333;
+    color: $color-gray-dark;
     background-color: $color-white;
     border-radius: 1rem;
     top: 256px;
     left: 28px;
-    box-shadow: 0px 24px 64px rgba(41, 15, 0, 0.0985337);
+    box-shadow: 0px 24px 64px #290f0019;
     border-radius: 16px;
   }
 
@@ -506,7 +506,7 @@ section {
       padding-top: 42px;
       padding-bottom: 48px;
       max-width: 470px;
-      color: #333333;
+      color: $color-gray-dark;
       background-color: $color-white;
       border-radius: 1rem;
       top: 400px;
@@ -586,12 +586,12 @@ section {
       margin-bottom: 1.75rem;
     }
     .testimonials__subtitle-description {
-      color: #333333;
+      color: $color-gray-dark;
       margin-bottom: 35px;
     }
     .testimonials__profile-social {
       margin-bottom: 0;
-      color: #33333380;
+      color: $color-gray-medium;
     }
   }
 
@@ -691,7 +691,7 @@ section {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background-color: #333333;
+    background-color: $color-gray-dark;
     object-fit: contain;
   }
 
@@ -822,7 +822,7 @@ section {
     z-index: 5;
     top: 30px;
     left: 25px;
-    background-color: rgba(0, 0, 0, 0.41);
+    background-color: #00000069;
     padding: 0 10px;
     border-radius: 0.5rem;
     color: $color-white;

@@ -1,3 +1,11 @@
+.mx-auto {
+  margin: 0 auto;
+}
+
+.pad-0 {
+  padding: 0 0;
+}
+
 .d-flex {
   display: flex;
 }
@@ -54,106 +62,6 @@
   position: absolute;
 }
 
-.bg-circle-right,
-.bg-circle-left {
-  display: none;
-}
-
-.bg-color-sc {
-  z-index: -1;
-  background-color: #495d4d;
-  width: 100%;
-  height: 3000px;
-  position: absolute;
-  top: 128px;
-  left: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .bg-color-sc {
-    height: 2800px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .bg-color-sc {
-    height: 1600px;
-  }
-}
-
-.bg-color-sc-1 {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 4071px;
-  left: 0px;
-  top: 177px;
-  background: #f9e5e1;
-}
-
-@media screen and (min-width: 576px) {
-  .bg-color-sc-1 {
-    height: 3853px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .bg-color-sc-1 {
-    height: 3040px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .bg-color-sc-1 {
-    height: 2332px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .bg-color-sc-1 {
-    height: 2162px;
-  }
-  .bg-circle-left {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    top: 315px;
-    left: 0;
-  }
-
-  .bg-circle-right {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    top: 928px;
-    right: 0;
-  }
-}
-
-.bg-solid-color {
-  background-color: #fff;
-}
-
-.bg-color-1 {
-  background-color: #f4d5af;
-}
-
-.bg-color-2 {
-  background-color: #96be9e;
-}
-
-.bg-color-3 {
-  background-color: #3f82d8;
-}
-
-.bg-color-4 {
-  background-color: #a16e62;
-}
-
-.bg-none {
-  background-color: transparent;
-}
-
 .margin-t {
   margin-top: 1rem;
 }
@@ -205,7 +113,7 @@
   max-height: 300px;
   width: 100%;
 
-  background: rgb(226, 179, 88);
+  background: $color-primary;
 
   mix-blend-mode: overlay;
 }
@@ -225,7 +133,7 @@
   max-height: 300px;
   width: 100%;
 
-  background: rgb(63, 130, 216);
+  background: $color-secondary;
 
   mix-blend-mode: overlay;
 }
@@ -244,7 +152,7 @@
   max-height: 300px;
   width: 100%;
 
-  background: rgb(161, 110, 98);
+  background: $color-tertiary;
 
   mix-blend-mode: overlay;
 }
@@ -262,17 +170,9 @@
   height: 12px;
   opacity: 1;
   background: transparent;
-  background: #fff0dd;
+  background: $color-primary-light;
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
-  background: #e2b358;
-}
-
-.mx-auto {
-  margin: 0 auto;
-}
-
-.pad-0 {
-  padding: 0 0;
+  background: $color-primary;
 }

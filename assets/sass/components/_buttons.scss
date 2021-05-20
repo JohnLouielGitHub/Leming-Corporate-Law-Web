@@ -182,12 +182,12 @@
   border-radius: 0.5rem;
   text-align: center;
   text-transform: uppercase;
-  background-color: #e2b358;
+  background-color: $color-primary;
   color: $color-white;
 }
 
 .button-tertiary:hover {
-  background-color: #e2a52c;
+  background-color: $color-tertiary;
   cursor: pointer;
   color: $color-white;
 }

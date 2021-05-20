@@ -52,7 +52,7 @@ body {
   font-size: 1.125rem;
   line-height: 2rem;
   font-weight: 700;
-  color: rgba(226, 179, 88, 1);
+  color: $color-primary;
 }
 
 label {
@@ -65,26 +65,26 @@ label {
   font-size: 1.25rem;
   line-height: 2rem;
   font-weight: 400;
-  color: rgba(51, 51, 51, 1);
+  color: $color-gray-dark;
 }
 
 .text {
   font-size: 1rem;
   line-height: 2rem;
   font-weight: 400;
-  color: rgba(51, 51, 51, 1);
+  color: $color-gray-dark;
 }
 
 .text__gray {
   font-size: 1rem;
   line-height: 2rem;
   font-weight: 400;
-  color: rgba(51, 51, 51, 0.5);
+  color: $color-gray-medium;
 }
 
 .text__gray-small {
   font-size: 0.875rem;
   line-height: 1.5rem;
   font-weight: 400;
-  color: rgba(51, 51, 51, 0.5);
+  color: $color-gray-medium;
 }

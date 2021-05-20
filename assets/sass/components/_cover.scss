@@ -1,0 +1,99 @@
+.bg-circle-right,
+.bg-circle-left {
+  display: none;
+}
+
+.bg-color-sc {
+  z-index: -1;
+  background-color: $color-dark-green;
+  width: 100%;
+  height: 3000px;
+  position: absolute;
+  top: 128px;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-color-sc {
+    height: 2800px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bg-color-sc {
+    height: 1600px;
+  }
+}
+
+.bg-color-sc-1 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 4071px;
+  left: 0px;
+  top: 177px;
+  background: $color-primary-lighter;
+}
+
+@media screen and (min-width: 576px) {
+  .bg-color-sc-1 {
+    height: 3853px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bg-color-sc-1 {
+    height: 3040px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bg-color-sc-1 {
+    height: 2332px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bg-color-sc-1 {
+    height: 2162px;
+  }
+  .bg-circle-left {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 315px;
+    left: 0;
+  }
+
+  .bg-circle-right {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 928px;
+    right: 0;
+  }
+}
+
+.bg-solid-color {
+  background-color: $color-white;
+}
+
+.bg-color-1 {
+  background-color: $color-primary-light;
+}
+
+.bg-color-2 {
+  background-color: $color-light-green;
+}
+
+.bg-color-3 {
+  background-color: $color-secondary;
+}
+
+.bg-color-4 {
+  background-color: $color-tertiary;
+}
+
+.bg-none {
+  background-color: transparent;
+}

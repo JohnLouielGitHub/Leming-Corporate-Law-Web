@@ -8,7 +8,8 @@
   padding-left: 24px;
 }
 
-input {
+input,
+textarea {
   font-size: 1rem;
   font-family: "Caladea", serif;
   font-style: normal;
@@ -778,32 +779,32 @@ header .container {
           align-items: center;
 }
 
-.header-logo {
+header .nav-menu,
+header a {
+  display: none;
+  color: #110f24;
+}
+
+header a:hover {
+  color: #333333;
+}
+
+header .header-logo {
   width: 156px;
   height: 56px;
 }
 
-.nav-menu,
-a {
-  display: none;
-}
-
-a:hover {
-  color: #333333;
-}
-
 @media screen and (min-width: 768px) {
-  .nav-menu {
+  header .nav-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .nav-menu li:not(:last-child) {
+  header .nav-menu li:not(:last-child) {
     margin-right: 48px;
   }
-  a {
+  header a {
     display: inline-block;
-    color: #110f24;
   }
 }
 
@@ -1090,6 +1091,13 @@ footer a:hover {
   color: #fff;
 }
 
+.button-light,
+.button-primary,
+.button-secondary,
+.button-tertiary {
+  display: inline-block;
+}
+
 .bg-circle-right,
 .bg-circle-left {
   display: none;
@@ -1099,10 +1107,27 @@ footer a:hover {
   z-index: -1;
   background-color: #495d4d;
   width: 100%;
-  height: 3000px;
+  height: 3100px;
   position: absolute;
   top: 128px;
   left: 0;
+}
+
+#hero-section .bg-hero {
+  background-color: #fff0dd;
+  width: 100vw;
+  height: 150%;
+  bottom: 0;
+  left: calc(50%);
+  border-bottom-left-radius: 100px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 992px) {
+  #hero-section .bg-hero {
+    width: 50vw;
+    right: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1255,25 +1280,6 @@ section {
   margin-bottom: 2.125rem;
 }
 
-#hero-section .bg-hero,
-#about-section .bg-hero {
-  background-color: #fff0dd;
-  width: 50vw;
-  height: 150%;
-  bottom: 0;
-  left: calc(50%);
-  border-bottom-left-radius: 100px;
-  z-index: -1;
-}
-
-@media screen and (min-width: 992px) {
-  #hero-section .bg-hero,
-  #about-section .bg-hero {
-    width: 100%;
-    right: 0;
-  }
-}
-
 .img-hero {
   margin: 0 auto;
   width: 100%;
@@ -1395,6 +1401,14 @@ section {
   max-height: 352px;
 }
 
+#service-section .service-card .heading-4 {
+  color: #fff;
+}
+
+#service-section .service-card .st-corporate {
+  color: #333333;
+}
+
 #service-section .service-card .service-text {
   left: 28px;
   bottom: 32px;
@@ -1411,10 +1425,6 @@ section {
   color: #333333;
 }
 
-#service-section .service-card .heading-4 {
-  color: #fff;
-}
-
 #service-section .service-card .service-img {
   background-size: cover;
   background-repeat: no-repeat;
@@ -1425,22 +1435,27 @@ section {
 }
 
 #service-section .service-card .image-1 {
-  background-image: url(/assets/img/service-corporate-card.png);
+  background-image: url(./../img/service-corporate-card.png);
 }
 
 #service-section .service-card .image-2 {
-  background-image: url(/assets/img/service-data-privacy-card.png);
+  background-image: url(./../img/service-data-privacy-card.png);
 }
 
 #service-section .service-card .image-3 {
-  background-image: url(/assets/img/service-employment-card.png);
+  background-image: url(./../img/service-employment-card.png);
 }
 
 #service-section .service-card .image-4 {
-  background-image: url(/assets/img/service-intellectual-card.png);
+  background-image: url(./../img/service-intellectual-card.png);
 }
 
 @media screen and (min-width: 768px) {
+  #service-section .st-corporate {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+  }
   #service-section .services__content-cards :nth-child(1) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -1507,16 +1522,16 @@ section {
        object-fit: cover;
   }
   #service-section .services__content-cards > .service-card .image-1 {
-    background-image: url(/assets/img/service-corporate-card.png);
+    background-image: url(./../img/service-corporate-card.png);
   }
   #service-section .services__content-cards > .service-card .image-2 {
-    background-image: url(/assets/img/service-data-privacy-card-1.png);
+    background-image: url(./../img/service-data-privacy-card-1.png);
   }
   #service-section .services__content-cards > .service-card .image-3 {
-    background-image: url(/assets/img/service-employment-card.png);
+    background-image: url(./../img/service-employment-card.png);
   }
   #service-section .services__content-cards > .service-card .image-4 {
-    background-image: url(/assets/img/service-intellectual-card.png);
+    background-image: url(./../img/service-intellectual-card.png);
   }
   #service-section .services__content-cards :nth-child(1) {
     -ms-grid-column: 1;
@@ -1585,11 +1600,18 @@ section {
 
 #about-section .about__image {
   max-width: 325px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
+  #about-section .about__image {
+    max-width: 570px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   #about-section .about__company__name {
     padding-top: 236px;
   }
@@ -1598,11 +1620,6 @@ section {
   }
   #about-section .about__btn {
     margin-bottom: 48px;
-  }
-  #about-section .about__image {
-    max-width: 570px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   #about-section .about__subtitle-description {
     max-width: 470px;

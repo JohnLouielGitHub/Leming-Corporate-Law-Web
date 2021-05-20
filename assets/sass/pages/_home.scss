@@ -54,23 +54,6 @@ section {
   .about__subtitle-description {
     margin-bottom: 2.125rem;
   }
-
-  .bg-hero {
-    background-color: #fff0dd;
-    width: 50vw;
-    height: 150%;
-    bottom: 0;
-    left: calc(50%);
-    border-bottom-left-radius: 100px;
-    z-index: -1;
-  }
-
-  @media screen and (min-width: 992px) {
-    .bg-hero {
-      width: 100%;
-      right: 0;
-    }
-  }
 }
 
 .img-hero {
@@ -196,6 +179,14 @@ section {
       max-height: 352px;
     }
 
+    .heading-4 {
+      color: $color-white;
+    }
+
+    .st-corporate {
+      color: $color-gray-dark;
+    }
+
     .service-text {
       left: 28px;
       bottom: 32px;
@@ -212,10 +203,6 @@ section {
       color: rgba(51, 51, 51, 1);
     }
 
-    .heading-4 {
-      color: $color-white;
-    }
-
     .service-img {
       background-size: cover;
       background-repeat: no-repeat;
@@ -224,19 +211,25 @@ section {
       object-fit: cover;
     }
     .image-1 {
-      background-image: url(/assets/img/service-corporate-card.png);
+      background-image: url(./../img/service-corporate-card.png);
     }
     .image-2 {
-      background-image: url(/assets/img/service-data-privacy-card.png);
+      background-image: url(./../img/service-data-privacy-card.png);
     }
     .image-3 {
-      background-image: url(/assets/img/service-employment-card.png);
+      background-image: url(./../img/service-employment-card.png);
     }
     .image-4 {
-      background-image: url(/assets/img/service-intellectual-card.png);
+      background-image: url(./../img/service-intellectual-card.png);
     }
   }
   @media screen and (min-width: 768px) {
+    .st-corporate {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      font-weight: 700;
+    }
+
     .services__content-cards {
       & :nth-child(1) {
         grid-column: 1/3;
@@ -288,16 +281,16 @@ section {
           object-fit: cover;
         }
         .image-1 {
-          background-image: url(/assets/img/service-corporate-card.png);
+          background-image: url(./../img/service-corporate-card.png);
         }
         .image-2 {
-          background-image: url(/assets/img/service-data-privacy-card-1.png);
+          background-image: url(./../img/service-data-privacy-card-1.png);
         }
         .image-3 {
-          background-image: url(/assets/img/service-employment-card.png);
+          background-image: url(./../img/service-employment-card.png);
         }
         .image-4 {
-          background-image: url(/assets/img/service-intellectual-card.png);
+          background-image: url(./../img/service-intellectual-card.png);
         }
       }
 
@@ -353,10 +346,16 @@ section {
 
   .about__image {
     max-width: 325px;
+    width: 100%;
     object-fit: cover;
   }
+  @media screen and (min-width: 768px) {
+    .about__image {
+      max-width: 570px;
+    }
+  }
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1200px) {
     .about__company__name {
       padding-top: 236px;
     }
@@ -368,10 +367,7 @@ section {
     .about__btn {
       margin-bottom: 48px;
     }
-    .about__image {
-      max-width: 570px;
-      object-fit: cover;
-    }
+
     .about__subtitle-description {
       max-width: 470px;
     }

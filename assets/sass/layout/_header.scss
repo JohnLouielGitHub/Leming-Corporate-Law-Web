@@ -9,32 +9,32 @@ header {
     margin-top: 1rem;
     align-items: center;
   }
-}
 
-.header-logo {
-  width: 156px;
-  height: 56px;
-}
-
-.nav-menu,
-a {
-  display: none;
-}
-
-a:hover {
-  color: $color-gray-dark;
-}
-
-@media screen and (min-width: 768px) {
-  .nav-menu {
-    display: flex;
-
-    li:not(:last-child) {
-      margin-right: 48px;
-    }
-  }
+  .nav-menu,
   a {
-    display: inline-block;
+    display: none;
     color: $color-text;
+  }
+
+  a:hover {
+    color: $color-gray-dark;
+  }
+
+  .header-logo {
+    width: 156px;
+    height: 56px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .nav-menu {
+      display: flex;
+
+      li:not(:last-child) {
+        margin-right: 48px;
+      }
+    }
+    a {
+      display: inline-block;
+    }
   }
 }

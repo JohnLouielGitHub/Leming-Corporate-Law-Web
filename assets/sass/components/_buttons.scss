@@ -191,3 +191,10 @@
   cursor: pointer;
   color: $color-white;
 }
+
+.button-light,
+.button-primary,
+.button-secondary,
+.button-tertiary {
+  display: inline-block;
+}

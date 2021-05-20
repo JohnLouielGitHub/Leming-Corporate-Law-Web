@@ -12,31 +12,29 @@ header {
 }
 
 .header-logo {
-  width: 48px;
-  height: 48px;
-  border: 3px solid #bdb05e;
-  border-radius: 50%;
+  width: 156px;
+  height: 56px;
 }
 
-.nav-menu {
-  display: none;
-}
-
+.nav-menu,
 a {
-  display: inline-block;
-  color: $color-text;
+  display: none;
 }
 
 a:hover {
   color: $color-gray-dark;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .nav-menu {
     display: flex;
 
     li:not(:last-child) {
       margin-right: 48px;
     }
+  }
+  a {
+    display: inline-block;
+    color: $color-text;
   }
 }

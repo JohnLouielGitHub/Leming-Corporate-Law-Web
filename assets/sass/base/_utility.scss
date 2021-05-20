@@ -54,12 +54,10 @@
   position: absolute;
 }
 
-// .bg-image {
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   width: 100%;
-//   height: 100%;
-// }
+.bg-circle-right,
+.bg-circle-left {
+  display: none;
+}
 
 .bg-color-sc {
   z-index: -1;
@@ -87,27 +85,48 @@
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 4103px;
+  height: 4071px;
   left: 0px;
-  top: 176px;
+  top: 177px;
   background: #f9e5e1;
 }
 
 @media screen and (min-width: 576px) {
   .bg-color-sc-1 {
-    height: 3954px;
+    height: 3853px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .bg-color-sc-1 {
-    height: 3086px;
+    height: 3040px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .bg-color-sc-1 {
-    height: 2064px;
+    height: 2332px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bg-color-sc-1 {
+    height: 2162px;
+  }
+  .bg-circle-left {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 315px;
+    left: 0;
+  }
+
+  .bg-circle-right {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 928px;
+    right: 0;
   }
 }
 
@@ -171,17 +190,19 @@
   width: 100%;
 }
 
-.myfilter {
+.myfilter-1 {
   position: relative;
 }
 
-.myfilter:after {
+.myfilter-1:after {
+  z-index: 3;
   position: absolute;
   content: "";
   display: block;
   top: 0;
   left: 0;
   height: 100%;
+  max-height: 300px;
   width: 100%;
 
   background: rgb(226, 179, 88);
@@ -189,6 +210,48 @@
   mix-blend-mode: overlay;
 }
 
+.myfilter-2 {
+  position: relative;
+}
+
+.myfilter-2:after {
+  z-index: 3;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-height: 300px;
+  width: 100%;
+
+  background: rgb(63, 130, 216);
+
+  mix-blend-mode: overlay;
+}
+
+.myfilter-3 {
+  position: relative;
+}
+
+.myfilter-3:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-height: 300px;
+  width: 100%;
+
+  background: rgb(161, 110, 98);
+
+  mix-blend-mode: overlay;
+}
+
+.flickity-button {
+  display: none;
+}
 /* position dots in carousel */
 .flickity-page-dots {
   bottom: 0px;
@@ -208,4 +271,8 @@
 
 .mx-auto {
   margin: 0 auto;
+}
+
+.pad-0 {
+  padding: 0 0;
 }

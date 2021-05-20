@@ -26,7 +26,11 @@
   <body>
     <header>
       <div class="container d-flex flex-between">
-        <img class="header-logo" src="./assets/img/logo.svg" alt="logo.png" />
+        <img
+          class="header-logo"
+          src="./assets/img/logo-dark-horizontal.svg"
+          alt="logo-dark-horizontal.svg"
+        />
 
         <nav>
           <ul class="nav-menu">
@@ -39,6 +43,7 @@
         <a class="button-light" href="#">Appointment</a>
       </div>
     </header>
+
     <main>
       <section id="hero-section">
         <div class="container h100">
@@ -67,11 +72,23 @@
       </section>
 
       <section id="quality-section" class="relative">
-        <div class="bg-color-sc-1"></div>
+        <div class="bg-color-sc-1">
+          <img
+            class="bg-circle-left"
+            src="./assets/img/circle-left.png"
+            alt="circle-left.png"
+          />
+          <img
+            class="bg-circle-right"
+            src="./assets/img/circle-right.png"
+            alt="circle-right.png"
+          />
+        </div>
+
         <div class="container">
           <div class="row">
             <div class="column column-lg-4 margin-b">
-              <div class="sc-2__card relative">
+              <div class="sc-2__card mx-auto relative">
                 <img
                   class="img-bg-shape absolute"
                   src="./assets/img/Quality-bg-shape.png"
@@ -82,7 +99,7 @@
                   src="./assets/img/Quality-shape.png"
                   alt="Quality.png"
                 />
-                <div class="card__title bold-m text-right">Quality</div>
+                <div class="card__title heading-4 text-right">Quality</div>
                 <p class="card__description">
                   Great height in the atmosphere, for the sky was a dead black,
                   and the stars had ceased to.
@@ -91,7 +108,7 @@
               </div>
             </div>
             <div class="column column-lg-4 margin-b">
-              <div class="sc-2__card relative">
+              <div class="sc-2__card mx-auto relative">
                 <img
                   class="img-bg-shape absolute"
                   src="./assets/img/Experience-bg-shape.png"
@@ -102,7 +119,7 @@
                   src="./assets/img/Experience-shape.png"
                   alt="Experience.png"
                 />
-                <div class="card__title bold-m text-right">Experience</div>
+                <div class="card__title heading-4 text-right">Experience</div>
                 <p class="card__description">
                   Height in the atmosphere, for the sky was a dead black, and
                   the stars had ceased to twinkle the same illusion which lifts.
@@ -111,7 +128,7 @@
               </div>
             </div>
             <div class="column column-lg-4 margin-b">
-              <div class="sc-2__card relative">
+              <div class="sc-2__card mx-auto relative">
                 <img
                   class="img-bg-shape absolute"
                   src="./assets/img/Awards-bg-shape.png"
@@ -122,7 +139,7 @@
                   src="./assets/img/Awards-shape.png"
                   alt="Awards.png"
                 />
-                <div class="card__title bold-m text-right">Awards</div>
+                <div class="card__title heading-4 text-right">Awards</div>
                 <p class="card__description">
                   In the atmosphere, for the sky was a dead black, and the stars
                   had ceased to twinkle the same illusion which lifts.
@@ -136,37 +153,39 @@
 
       <section id="service-section">
         <div class="container">
-          <div class="service__heading column text-center">
-            <h5 class="service__head heading-5">Our Service</h5>
-            <h1 class="service__title-description heading-2">
-              Service Offering
-            </h1>
-            <p class="service__subtitle-description text_big">
-              The sky was cloudless and of a deep dark blue. The spectacle
-              before us was indeed sublime.
-            </p>
+          <div class="column text-center">
+            <div class="service__heading">
+              <h5 class="service__head heading-5">Our Service</h5>
+              <h1 class="service__title-description heading-2">
+                Service Offering
+              </h1>
+              <p class="service__subtitle-description text_big">
+                The sky was cloudless and of a deep dark blue. The spectacle
+                before us was indeed sublime.
+              </p>
+            </div>
           </div>
           <div class="column">
             <div class="services__content-cards d-grid">
-              <div class="grid column service-card bg-color-1 relative">
+              <div class="grid service-card bg-color-1 relative">
                 <div class="service-img image-1"></div>
-                <div class="absolute service-text heading-3">
+                <div class="absolute service-text heading-2">
                   <h4>Corporate</h4>
                 </div>
               </div>
-              <div class="grid column service-card bg-color-2 relative">
+              <div class="grid service-card bg-color-2 relative">
                 <div class="service-img image-2"></div>
                 <div class="absolute service-text heading-4">
                   <h4>Privacy Policy</h4>
                 </div>
               </div>
-              <div class="grid column service-card bg-color-3 relative">
+              <div class="grid service-card bg-color-3 relative">
                 <div class="service-img image-3"></div>
                 <div class="absolute service-text heading-4">
                   <h4>Employment</h4>
                 </div>
               </div>
-              <div class="grid column service-card bg-color-4 relative">
+              <div class="grid service-card bg-color-4 relative">
                 <div class="service-img image-4"></div>
                 <div class="absolute service-text heading-4">
                   <h4>Intellectual</h4>
@@ -182,7 +201,7 @@
           <div class="row flex-center">
             <div class="column text-center">
               <div class="clients__sub-heading heading-5">Our Clients</div>
-              <div class="clients__heading heading-3">
+              <div class="clients__heading heading-2 mx-auto">
                 Companies that know me well confirm that I am a great lawyer
               </div>
             </div>
@@ -236,7 +255,7 @@
             <div class="column column-lg-6">
               <div class="mx-auto">
                 <h5 class="about__company__name heading-5">About</h5>
-                <h2 class="about__title-description heading-3">
+                <h2 class="about__title-description heading-2">
                   Justice is Valuable
                 </h2>
                 <p class="about__subtitle-description text_big">
@@ -400,7 +419,18 @@
       </section>
 
       <section id="consultation-section" class="relative">
-        <div class="bg-color-sc"></div>
+        <div class="bg-color-sc">
+          <img
+            class="bg-circle-left"
+            src="./assets/img/circle-left.png"
+            alt="circle-left.png"
+          />
+          <img
+            class="bg-circle-right"
+            src="./assets/img/circle-right.png"
+            alt="circle-right.png"
+          />
+        </div>
         <div class="container bg-solid-color">
           <div class="row">
             <div class="column column-lg-6">
@@ -498,7 +528,7 @@
           <div class="row">
             <div class="column column-sm-12 text-center">
               <h5 class="blog__heading heading-5">Our Blog</h5>
-              <h1 class="blog__title-description heading-3">Latest Articles</h1>
+              <h1 class="blog__title-description heading-2">Latest Articles</h1>
               <p class="blog__subtitle-description text_big">
                 The sky was cloudless and of a deep dark blue. The spectacle
                 before us was indeed sublime.
@@ -507,7 +537,7 @@
           </div>
           <div class="row flex-between">
             <div class="column column-md-6 column-lg-4">
-              <div class="blog__card relative">
+              <div class="blog__card relative bg-solid-color myfilter-1">
                 <div class="blog__card-date text absolute">21 March 2020</div>
                 <img
                   class="blog__card-image"
@@ -515,7 +545,7 @@
                   alt="blog-image-1.png"
                 />
 
-                <div class="blog__content bg-solid-color">
+                <div class="blog__content">
                   <div class="heading-4">
                     It was going to be a lonely trip back
                   </div>
@@ -523,7 +553,7 @@
               </div>
             </div>
             <div class="column column-md-6 column-lg-4">
-              <div class="blog__card relative">
+              <div class="blog__card relative bg-solid-color myfilter-2">
                 <div class="blog__card-date text absolute">20 March 2020</div>
                 <img
                   class="blog__card-image"
@@ -531,7 +561,7 @@
                   alt="blog-image-2.png"
                 />
 
-                <div class="blog__content bg-solid-color">
+                <div class="blog__content">
                   <div class="heading-4">
                     My two natures had memory in common
                   </div>
@@ -539,7 +569,7 @@
               </div>
             </div>
             <div class="column column-md-12 column-lg-4">
-              <div class="blog__card bg-color-4 relative">
+              <div class="blog__card relative bg-solid-color myfilter-3">
                 <div class="blog__card-date text absolute">19 March 2020</div>
                 <img
                   class="blog__card-image"
@@ -547,7 +577,7 @@
                   alt="blog-image-3.png"
                 />
 
-                <div class="blog__content bg-solid-color">
+                <div class="blog__content">
                   <div class="heading-4">
                     Silver mist suffused the deck of the ship
                   </div>
@@ -570,8 +600,8 @@
               <div class="logo">
                 <img
                   class="footer-logo"
-                  src="./assets/img/logo.svg"
-                  alt="logo.png"
+                  src="./assets/img/logo-light-vertical.svg"
+                  alt="logo-light-vertical.svg"
                 />
               </div>
               <div class="icons">

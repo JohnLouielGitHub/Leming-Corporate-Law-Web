@@ -211,18 +211,19 @@ section {
       object-fit: cover;
     }
     .image-1 {
-      background-image: url(Leming-Corporate-Law-Web/assets/img/service-corporate-card.png);
+      background-image: url(./../img/service-corporate-card.png);
     }
     .image-2 {
-      background-image: url(Leming-Corporate-Law-Web/assets/img/service-data-privacy-card.png);
+      background-image: url(./../img/service-data-privacy-card.png);
     }
     .image-3 {
-      background-image: url(Leming-Corporate-Law-Web/assets/img/service-employment-card.png);
+      background-image: url(./../img/service-employment-card.png);
     }
     .image-4 {
-      background-image: url(Leming-Corporate-Law-Web/assets/img/service-intellectual-card.png);
+      background-image: url(./../img/service-intellectual-card.png);
     }
   }
+
   @media screen and (min-width: 768px) {
     .st-corporate {
       font-size: 2.5rem;
@@ -263,7 +264,6 @@ section {
     }
 
     .services__content-cards {
-      margin: 0 auto;
       overflow: hidden;
       grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: minmax(290px, max-content);
@@ -280,17 +280,8 @@ section {
           max-height: none;
           object-fit: cover;
         }
-        .image-1 {
-          background-image: url(Leming-Corporate-Law-Web/assets/img/service-corporate-card.png);
-        }
         .image-2 {
-          background-image: url(Leming-Corporate-Law-Web/assets/img/service-data-privacy-card-1.png);
-        }
-        .image-3 {
-          background-image: url(Leming-Corporate-Law-Web/assets/img/service-employment-card.png);
-        }
-        .image-4 {
-          background-image: url(Leming-Corporate-Law-Web/assets/img/service-intellectual-card.png);
+          background-image: url(./../img/service-data-privacy-card-1.png);
         }
       }
 

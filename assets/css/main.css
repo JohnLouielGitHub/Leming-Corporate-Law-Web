@@ -1435,19 +1435,19 @@ section {
 }
 
 #service-section .service-card .image-1 {
-  background-image: url(Leming-Corporate-Law-Web/assets/img/service-corporate-card.png);
+  background-image: url(./../img/service-corporate-card.png);
 }
 
 #service-section .service-card .image-2 {
-  background-image: url(Leming-Corporate-Law-Web/assets/img/service-data-privacy-card.png);
+  background-image: url(./../img/service-data-privacy-card.png);
 }
 
 #service-section .service-card .image-3 {
-  background-image: url(Leming-Corporate-Law-Web/assets/img/service-employment-card.png);
+  background-image: url(./../img/service-employment-card.png);
 }
 
 #service-section .service-card .image-4 {
-  background-image: url(Leming-Corporate-Law-Web/assets/img/service-intellectual-card.png);
+  background-image: url(./../img/service-intellectual-card.png);
 }
 
 @media screen and (min-width: 768px) {
@@ -1501,7 +1501,6 @@ section {
     font-weight: 700;
   }
   #service-section .services__content-cards {
-    margin: 0 auto;
     overflow: hidden;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -1521,17 +1520,8 @@ section {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  #service-section .services__content-cards > .service-card .image-1 {
-    background-image: url(Leming-Corporate-Law-Web/assets/img/service-corporate-card.png);
-  }
   #service-section .services__content-cards > .service-card .image-2 {
-    background-image: url(Leming-Corporate-Law-Web/assets/img/service-data-privacy-card-1.png);
-  }
-  #service-section .services__content-cards > .service-card .image-3 {
-    background-image: url(Leming-Corporate-Law-Web/assets/img/service-employment-card.png);
-  }
-  #service-section .services__content-cards > .service-card .image-4 {
-    background-image: url(Leming-Corporate-Law-Web/assets/img/service-intellectual-card.png);
+    background-image: url(./../img/service-data-privacy-card-1.png);
   }
   #service-section .services__content-cards :nth-child(1) {
     -ms-grid-column: 1;

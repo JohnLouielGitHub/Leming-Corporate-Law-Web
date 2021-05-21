@@ -97,7 +97,7 @@
               ></div>
               <img
                 class="img-hero"
-                data-aos="fade-left"
+                data-aos="fade-down"
                 data-aos-delay="70"
                 data-aos-duration="1000"
                 src="./assets/img/hero-image.png"
@@ -106,7 +106,7 @@
             </div>
             <div
               class="column column-lg-6"
-              data-aos="fade-right"
+              data-aos="fade-down"
               data-aos-delay="70"
               data-aos-duration="1000"
             >
@@ -318,7 +318,7 @@
           <div class="row flex-row-reverse">
             <div
               class="column column-lg-6 text-center"
-              data-aos="zoom-in-left"
+              data-aos="zoom-in"
               data-aos-easing="linear"
               data-aos-duration="850"
             >
@@ -330,7 +330,7 @@
             </div>
             <div
               class="column column-lg-6"
-              data-aos="zoom-in-right"
+              data-aos="zoom-in"
               data-aos-easing="linear"
               data-aos-duration="750"
             >
@@ -470,7 +470,7 @@
               ></div>
               <img
                 class="testimonials-image"
-                data-aos="zoom-in-left"
+                data-aos="zoom-in"
                 data-aos-easing="linear"
                 data-aos-duration="850"
                 src="./assets/img/testimonies__image.png"
@@ -479,7 +479,7 @@
             </div>
             <div
               class="column column-lg-6"
-              data-aos="zoom-in-right"
+              data-aos="zoom-in"
               data-aos-easing="linear"
               data-aos-duration="850"
             >
@@ -814,6 +814,16 @@
       });
 
       AOS.init();
+    </script>
+    <script>
+      function hideMenu() {
+        let menuOpen = document.querySelector(".toggler").checked;
+
+        if ((menuOpen = true)) {
+          document.querySelector(".toggler").checked = false;
+        }
+      }
+      window.addEventListener("scroll", hideMenu);
     </script>
   </body>
 </html>

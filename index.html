@@ -27,22 +27,27 @@
   <body>
     <header class="header">
       <div class="container d-flex flex-between">
-        <img
-          class="header-logo"
-          src="./assets/img/logo-dark-horizontal.svg"
-          alt="logo-dark-horizontal.svg"
-        />
+        <a href="#">
+          <img
+            class="header-logo"
+            src="./assets/img/logo-dark-horizontal.svg"
+            alt="logo-dark-horizontal.svg"
+          />
+        </a>
         <div class="menu-wrap">
           <input type="checkbox" class="toggler" />
           <div class="hamburger"><div></div></div>
           <div class="menu">
             <div>
               <div>
-                <img
-                  class="header-logo-dropdown"
-                  src="./assets/img/logo-dark-vertical.svg"
-                  alt="logo-dark-vertical.svg"
-                />
+                <a href="#">
+                  <img
+                    class="header-logo-dropdown"
+                    src="./assets/img/logo-dark-vertical.svg"
+                    alt="logo-dark-vertical.svg"
+                  />
+                </a>
+
                 <ul>
                   <li class="nav-menu__link text">
                     <a href="#about-section">About</a>
@@ -57,7 +62,9 @@
                     <a href="#consultation-section">Contact</a>
                   </li>
                   <li>
-                    <a class="button-primary" href="#">Appointment</a>
+                    <a class="button-primary" href="#consultation-section"
+                      >Appointment</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -80,7 +87,9 @@
             </li>
           </ul>
         </nav>
-        <a class="header-btn button-light" href="#">Appointment</a>
+        <a class="header-btn button-light" href="#consultation-section"
+          >Appointment</a
+        >
       </div>
     </header>
 
@@ -97,7 +106,7 @@
               ></div>
               <img
                 class="img-hero"
-                data-aos="fade-left"
+                data-aos="fade-down"
                 data-aos-delay="70"
                 data-aos-duration="1000"
                 src="./assets/img/hero-image.png"
@@ -106,7 +115,7 @@
             </div>
             <div
               class="column column-lg-6"
-              data-aos="fade-right"
+              data-aos="fade-down"
               data-aos-delay="70"
               data-aos-duration="1000"
             >
@@ -307,7 +316,7 @@
           </div>
 
           <div class="text-center">
-            <a href="#" class="btn btn-m button-primary">Appointment</a>
+            <a href="#consultation-section" class="btn btn-m button-primary">Appointment</a>
           </div>
         </div>
       </section>
@@ -318,7 +327,7 @@
           <div class="row flex-row-reverse">
             <div
               class="column column-lg-6 text-center"
-              data-aos="zoom-in-left"
+              data-aos="zoom-in"
               data-aos-easing="linear"
               data-aos-duration="850"
             >
@@ -330,7 +339,7 @@
             </div>
             <div
               class="column column-lg-6"
-              data-aos="zoom-in-right"
+              data-aos="zoom-in"
               data-aos-easing="linear"
               data-aos-duration="750"
             >
@@ -387,7 +396,12 @@
           </div>
           <div class="row">
             <div class="column">
-              <div class="carousel">
+              <div
+                class="carousel"
+                data-aos="fade-up"
+                data-aos-delay="70"
+                data-aos-duration="1200"
+              >
                 <div class="story-card relative">
                   <img
                     class="stories__image"
@@ -470,7 +484,7 @@
               ></div>
               <img
                 class="testimonials-image"
-                data-aos="zoom-in-left"
+                data-aos="zoom-in"
                 data-aos-easing="linear"
                 data-aos-duration="850"
                 src="./assets/img/testimonies__image.png"
@@ -479,7 +493,7 @@
             </div>
             <div
               class="column column-lg-6"
-              data-aos="zoom-in-right"
+              data-aos="zoom-in"
               data-aos-easing="linear"
               data-aos-duration="850"
             >
@@ -720,15 +734,17 @@
           <div class="row">
             <div class="column column-md-6 column-lg-3">
               <div class="logo">
-                <img
-                  class="footer-logo"
-                  src="./assets/img/logo-light-vertical.svg"
-                  alt="logo-light-vertical.svg"
-                />
+                <a href="#">
+                  <img
+                    class="footer-logo"
+                    src="./assets/img/logo-light-vertical.svg"
+                    alt="logo-light-vertical.svg"
+                  />
+                </a>
               </div>
               <div class="icons">
                 <div class="footer-social-icon text-center">
-                  <a href="#">
+                  <a href="https://www.facebook.com/">
                     <img
                       class="social-icon"
                       src="./assets/img/Facebook-icon.png"
@@ -736,7 +752,7 @@
                   /></a>
                 </div>
                 <div class="footer-social-icon text-center">
-                  <a href="#">
+                  <a href="https://twitter.com/home">
                     <img
                       class="social-icon"
                       src="./assets/img/Twitter-icon.png"
@@ -745,7 +761,7 @@
                   </a>
                 </div>
                 <div class="footer-social-icon text-center">
-                  <a href="#">
+                  <a href="https://www.instagram.com/accounts/login/">
                     <img
                       class="social-icon"
                       src="./assets/img/Instagram-icon.png"
@@ -797,6 +813,7 @@
         </div>
       </div>
     </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
@@ -814,6 +831,16 @@
       });
 
       AOS.init();
+    </script>
+    <script>
+      function hideMenu() {
+        let menuOpen = document.querySelector(".toggler").checked;
+
+        if ((menuOpen = true)) {
+          document.querySelector(".toggler").checked = false;
+        }
+      }
+      window.addEventListener("scroll", hideMenu);
     </script>
   </body>
 </html>

@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -37,12 +38,12 @@
           <div class="menu">
             <div>
               <div>
+                <img
+                  class="header-logo-dropdown"
+                  src="./assets/img/logo-dark-vertical.svg"
+                  alt="logo-dark-vertical.svg"
+                />
                 <ul>
-                  <img
-                    class="header-logo-dropdown"
-                    src="./assets/img/logo-dark-vertical.svg"
-                    alt="logo-dark-vertical.svg"
-                  />
                   <li class="nav-menu__link text">
                     <a href="#about-section">About</a>
                   </li>
@@ -88,14 +89,27 @@
         <div class="container h100">
           <div class="row flex-center h100 flex-row-reverse">
             <div class="column column-lg-6 text-center relative">
-              <div class="bg-hero absolute"></div>
+              <div
+                class="bg-hero absolute"
+                data-aos="fade-down"
+                data-aos-delay="70"
+                data-aos-duration="1200"
+              ></div>
               <img
                 class="img-hero"
+                data-aos="fade-left"
+                data-aos-delay="70"
+                data-aos-duration="1000"
                 src="./assets/img/hero-image.png"
                 alt="hero-image.png"
               />
             </div>
-            <div class="column column-lg-6">
+            <div
+              class="column column-lg-6"
+              data-aos="fade-right"
+              data-aos-delay="70"
+              data-aos-duration="1000"
+            >
               <h5 class="hero__company__name heading-5">Lawyer</h5>
               <h1 class="hero__title-description heading-1">
                 Finding Out the Truth, Arguing and Winning
@@ -123,11 +137,14 @@
             alt="circle-right.png"
           />
         </div>
-
         <div class="container">
           <div class="row">
             <div class="column column-lg-4 margin-b">
-              <div class="sc-2__card mx-auto relative">
+              <div
+                class="sc-2__card mx-auto relative"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              >
                 <img
                   class="img-bg-shape absolute"
                   src="./assets/img/Quality-bg-shape.png"
@@ -147,7 +164,11 @@
               </div>
             </div>
             <div class="column column-lg-4 margin-b">
-              <div class="sc-2__card mx-auto relative">
+              <div
+                class="sc-2__card mx-auto relative"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <img
                   class="img-bg-shape absolute"
                   src="./assets/img/Experience-bg-shape.png"
@@ -167,7 +188,11 @@
               </div>
             </div>
             <div class="column column-lg-4 margin-b">
-              <div class="sc-2__card mx-auto relative">
+              <div
+                class="sc-2__card mx-auto relative"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
                 <img
                   class="img-bg-shape absolute"
                   src="./assets/img/Awards-bg-shape.png"
@@ -206,21 +231,33 @@
           </div>
           <div class="column">
             <div class="services__content-cards d-grid">
-              <div class="grid service-card bg-color-1 relative">
+              <div
+                class="grid service-card bg-color-1 relative"
+                data-aos="flip-left"
+              >
                 <div class="service-img image-1"></div>
                 <h4 class="absolute service-text st-corporate heading-4">
                   Corporate
                 </h4>
               </div>
-              <div class="grid service-card bg-color-2 relative">
+              <div
+                class="grid service-card bg-color-2 relative"
+                data-aos="flip-left"
+              >
                 <div class="service-img image-2"></div>
                 <h4 class="absolute service-text heading-4">Privacy Policy</h4>
               </div>
-              <div class="grid service-card bg-color-3 relative">
+              <div
+                class="grid service-card bg-color-3 relative"
+                data-aos="flip-left"
+              >
                 <div class="service-img image-3"></div>
                 <h4 class="absolute service-text heading-4">Employment</h4>
               </div>
-              <div class="grid service-card bg-color-4 relative">
+              <div
+                class="grid service-card bg-color-4 relative"
+                data-aos="flip-left"
+              >
                 <div class="service-img image-4"></div>
                 <h4 class="absolute service-text heading-4">Intellectual</h4>
               </div>
@@ -279,14 +316,24 @@
         <div class="bg-solid-color absolute"></div>
         <div class="container">
           <div class="row flex-row-reverse">
-            <div class="column column-lg-6 text-center">
+            <div
+              class="column column-lg-6 text-center"
+              data-aos="zoom-in-left"
+              data-aos-easing="linear"
+              data-aos-duration="850"
+            >
               <img
                 class="about__image"
                 src="./assets/img/about__image.png"
                 alt="about-image.png"
               />
             </div>
-            <div class="column column-lg-6">
+            <div
+              class="column column-lg-6"
+              data-aos="zoom-in-right"
+              data-aos-easing="linear"
+              data-aos-duration="750"
+            >
               <div class="mx-auto">
                 <h5 class="about__company__name heading-5">About</h5>
                 <h2 class="about__title-description heading-2">
@@ -304,17 +351,21 @@
       </section>
 
       <section id="stats-section">
-        <div class="container bg-color-3 text-center">
+        <div
+          class="container bg-color-3 text-center"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
           <div class="row">
-            <div class="column column-md-4 column-lg-4">
+            <div class="column column-md-4 column-lg-4" data-aos="fade-up">
               <h2 class="heading-2">100+</h2>
               <div class="text_big">Clients</div>
             </div>
-            <div class="column column-md-4 column-lg-4">
+            <div class="column column-md-4 column-lg-4" data-aos="fade-up">
               <h2 class="heading-2">99%</h2>
               <div class="text_big">Winning Cases</div>
             </div>
-            <div class="column column-md-4 column-lg-4">
+            <div class="column column-md-4 column-lg-4" data-aos="fade-up">
               <h2 class="heading-2">73k</h2>
               <div class="text_big">Recovered Money</div>
             </div>
@@ -412,14 +463,26 @@
         <div class="container">
           <div class="row">
             <div class="column column-lg-6 text-center relative">
-              <div class="bg-testimonial absolute"></div>
+              <div
+                class="bg-testimonial absolute"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-center"
+              ></div>
               <img
                 class="testimonials-image"
+                data-aos="zoom-in-left"
+                data-aos-easing="linear"
+                data-aos-duration="850"
                 src="./assets/img/testimonies__image.png"
                 alt="testimonials-image.png"
               />
             </div>
-            <div class="column column-lg-6">
+            <div
+              class="column column-lg-6"
+              data-aos="zoom-in-right"
+              data-aos-easing="linear"
+              data-aos-duration="850"
+            >
               <div class="testimonials-div">
                 <h5 class="testimonials__heading heading-5">Testimonials</h5>
                 <h2 class="testimonials__title-description heading-2">
@@ -453,7 +516,12 @@
       </section>
 
       <section id="consultation-section" class="relative">
-        <div class="bg-color-sc">
+        <div
+          class="bg-color-sc"
+          data-aos="fade-up"
+          data-aos-delay="70"
+          data-aos-duration="1200"
+        >
           <img
             class="bg-circle-left"
             src="./assets/img/circle-left.png"
@@ -465,7 +533,12 @@
             alt="circle-right.png"
           />
         </div>
-        <div class="container bg-solid-color">
+        <div
+          class="container bg-solid-color"
+          data-aos="fade-up"
+          data-aos-delay="70"
+          data-aos-duration="1000"
+        >
           <div class="row">
             <div class="column column-lg-6">
               <div class="consultation-form bg-solid-color">
@@ -570,7 +643,12 @@
             </div>
           </div>
           <div class="row flex-between">
-            <div class="column column-md-6 column-lg-4">
+            <div
+              class="column column-md-6 column-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="70"
+              data-aos-duration="1000"
+            >
               <div class="blog__card relative bg-solid-color myfilter-1">
                 <div class="blog__card-date text absolute">21 March 2020</div>
                 <img
@@ -586,7 +664,12 @@
                 </div>
               </div>
             </div>
-            <div class="column column-md-6 column-lg-4">
+            <div
+              class="column column-md-6 column-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="70"
+              data-aos-duration="1400"
+            >
               <div class="blog__card relative bg-solid-color myfilter-2">
                 <div class="blog__card-date text absolute">20 March 2020</div>
                 <img
@@ -602,7 +685,12 @@
                 </div>
               </div>
             </div>
-            <div class="column column-md-12 column-lg-4">
+            <div
+              class="column column-md-12 column-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="70"
+              data-aos-duration="2000"
+            >
               <div class="blog__card relative bg-solid-color myfilter-3">
                 <div class="blog__card-date text absolute">19 March 2020</div>
                 <img
@@ -709,7 +797,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
       var elem = document.querySelector(".carousel");
@@ -724,6 +812,8 @@
       var flkty = new Flickity(".carousel", {
         // options
       });
+
+      AOS.init();
     </script>
   </body>
 </html>

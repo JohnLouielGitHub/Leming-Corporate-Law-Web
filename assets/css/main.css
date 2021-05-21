@@ -1577,10 +1577,6 @@ section {
   }
 }
 
-#service-section .column {
-  margin-bottom: 10.625rem;
-}
-
 #service-section .service__heading {
   margin-bottom: 4.5rem;
 }
@@ -1603,6 +1599,7 @@ section {
 #service-section .services__content-cards {
   padding: auto 23px;
   width: 100%;
+  margin-bottom: 10.625rem;
 }
 
 #service-section .service-card {

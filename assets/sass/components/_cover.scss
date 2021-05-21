@@ -16,7 +16,7 @@
 #hero-section {
   .bg-hero {
     background-color: #fff0dd;
-    width: 100vw;
+    width: 50vw;
     height: 150%;
     bottom: 0;
     left: calc(50%);
@@ -46,9 +46,9 @@
 
 .bg-color-sc-1 {
   position: absolute;
-  z-index: -1;
+  z-index: -4;
   width: 100%;
-  height: 4071px;
+  height: 4600px;
   left: 0px;
   top: 177px;
   background: $color-primary-lighter;
@@ -56,13 +56,13 @@
 
 @media screen and (min-width: 576px) {
   .bg-color-sc-1 {
-    height: 3853px;
+    height: 4000px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .bg-color-sc-1 {
-    height: 3040px;
+    height: 3940px;
   }
 }
 

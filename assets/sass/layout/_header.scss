@@ -4,6 +4,9 @@ header {
   width: 100%;
   z-index: 2;
   padding: 0 15px;
+  a {
+    color: $color-text;
+  }
 }
 
 .container {
@@ -21,18 +24,20 @@ header {
     display: block;
   }
 }
-
-a {
-  color: $color-text;
-}
-
-a:hover {
-  color: $color-gray-dark;
+.menu {
+  .nav-menu__link:hover {
+    color: $color-orange;
+  }
 }
 
 .header-logo {
   width: 156px;
   height: 56px;
+}
+
+.header-logo-dropdown {
+  width: 156px;
+  height: 156px;
 }
 
 @media screen and (min-width: 768px) {

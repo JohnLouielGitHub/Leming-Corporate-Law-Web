@@ -31,6 +31,38 @@
           src="./assets/img/logo-dark-horizontal.svg"
           alt="logo-dark-horizontal.svg"
         />
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <img
+                    class="header-logo-dropdown"
+                    src="./assets/img/logo-dark-vertical.svg"
+                    alt="logo-dark-vertical.svg"
+                  />
+                  <li class="nav-menu__link text">
+                    <a href="#about-section">About</a>
+                  </li>
+                  <li class="nav-menu__link text">
+                    <a href="#stories-section">Cases</a>
+                  </li>
+                  <li class="nav-menu__link text">
+                    <a href="#blog-section">Blog</a>
+                  </li>
+                  <li class="nav-menu__link text">
+                    <a href="#consultation-section">Contact</a>
+                  </li>
+                  <li>
+                    <a class="button-primary" href="#">Appointment</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         <nav>
           <ul class="nav-menu">
             <li class="nav-menu__link text">
@@ -48,12 +80,6 @@
           </ul>
         </nav>
         <a class="header-btn button-light" href="#">Appointment</a>
-        <input
-          type="checkbox"
-          name="nav"
-          id="ham-menu"
-          class="ham-btn d-none"
-        />
       </div>
     </header>
 
@@ -249,7 +275,8 @@
         </div>
       </section>
 
-      <section id="about-section">
+      <section id="about-section" class="relative">
+        <div class="bg-solid-color absolute"></div>
         <div class="container">
           <div class="row flex-row-reverse">
             <div class="column column-lg-6 text-center">
@@ -613,25 +640,30 @@
               </div>
               <div class="icons">
                 <div class="footer-social-icon text-center">
-                  <img
-                    class="social-icon"
-                    src="./assets/img/Facebook-icon.png"
-                    alt="Facebook-icon.png"
-                  />
+                  <a href="#">
+                    <img
+                      class="social-icon"
+                      src="./assets/img/Facebook-icon.png"
+                      alt="Facebook-icon.png"
+                  /></a>
                 </div>
                 <div class="footer-social-icon text-center">
-                  <img
-                    class="social-icon"
-                    src="./assets/img/Twitter-icon.png"
-                    alt="Twitter-icon.png"
-                  />
+                  <a href="#">
+                    <img
+                      class="social-icon"
+                      src="./assets/img/Twitter-icon.png"
+                      alt="Twitter-icon.png"
+                    />
+                  </a>
                 </div>
                 <div class="footer-social-icon text-center">
-                  <img
-                    class="social-icon"
-                    src="./assets/img/Instagram-icon.png"
-                    alt="Instagram-icon.png"
-                  />
+                  <a href="#">
+                    <img
+                      class="social-icon"
+                      src="./assets/img/Instagram-icon.png"
+                      alt="Instagram-icon.png"
+                    />
+                  </a>
                 </div>
               </div>
             </div>

@@ -806,7 +806,6 @@ header a {
 }
 
 header .container {
-  background-color: #cccccf;
   padding: 0 1rem;
 }
 
@@ -1291,6 +1290,7 @@ footer a:hover {
   height: 56px;
   padding: 1rem;
   border-radius: 30%;
+  border: 1px solid #33333380;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1401,8 +1401,8 @@ footer a:hover {
 .menu-wrap .menu > div {
   background: var(--primary-color);
   border-radius: 5%;
-  width: 200vw;
-  height: 200vw;
+  width: 80vw;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

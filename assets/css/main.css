@@ -404,7 +404,7 @@ body {
   font-weight: 700;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .heading-1 {
     font-size: 4.5rem;
     line-height: 5rem;
@@ -804,6 +804,7 @@ header {
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 header a {
@@ -1074,14 +1075,14 @@ footer a:hover {
   line-height: 16px;
   letter-spacing: 0px;
   text-align: center;
-  padding: 16px 30px 16px 30px;
+  padding: 16px 30px;
   border-radius: 0.5rem;
   border: 1px solid rgba(129, 128, 128, 0.4);
   background-color: transparent;
 }
 
 .button-light:hover {
-  background-color: #fff;
+  background-color: #cccccf;
   cursor: pointer;
   color: #110f24;
 }
@@ -1093,7 +1094,7 @@ footer a:hover {
   line-height: 16px;
   letter-spacing: 0px;
   text-align: center;
-  padding: 16px 30px 16px 30px;
+  padding: 16px 30px;
   border-radius: 0.5rem;
   background-color: #333333;
   color: #fff;
@@ -1108,7 +1109,7 @@ footer a:hover {
 .button-secondary {
   font-size: 14px;
   line-height: 16px;
-  padding: 16px 30px 16px 30px;
+  padding: 16px 30px;
   border-radius: 0.5rem;
   text-align: center;
   text-transform: uppercase;
@@ -1125,7 +1126,7 @@ footer a:hover {
 .button-tertiary {
   font-size: 14px;
   line-height: 16px;
-  padding: 16px 30px 16px 30px;
+  padding: 16px 30px;
   border-radius: 0.5rem;
   text-align: center;
   text-transform: uppercase;

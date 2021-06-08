@@ -1430,8 +1430,8 @@ footer a:hover {
 
 .menu-wrap .menu > div > div {
   text-align: center;
-  max-width: 90vw;
-  max-height: 100vh;
+  max-width: 200vw;
+  max-height: 200vh;
   opacity: 0;
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
@@ -1956,13 +1956,15 @@ section {
 }
 
 #stories-section .stories__image {
-  max-width: 300px;
+  max-width: 350px;
   max-height: 408px;
+  height: 100%;
   margin-bottom: 239px;
   border-radius: 1rem;
 }
 
 #stories-section .stories__content {
+  min-height: 230px;
   padding-right: 28px;
   padding-left: 56px;
   padding-top: 42px;
@@ -1971,7 +1973,7 @@ section {
   background-color: #fff;
   border-radius: 1rem;
   top: 256px;
-  left: 128px;
+  left: 28px;
   -webkit-box-shadow: 0px 24px 64px #290f0019;
           box-shadow: 0px 24px 64px #290f0019;
   border-radius: 16px;
@@ -1983,7 +1985,11 @@ section {
 
 @media screen and (min-width: 768px) {
   #stories-section .stories__image {
-    max-width: 400px;
+    max-width: 430px;
+  }
+  #stories-section .stories__content {
+    top: 256px;
+    left: 128px;
   }
 }
 
@@ -2202,6 +2208,10 @@ section {
   margin-bottom: 40px;
 }
 
+#consultation-section .consultation__email {
+  font-size: 14px;
+}
+
 #consultation-section .consultation__news-letter {
   padding-top: 3.5rem;
   padding-bottom: 4rem;
@@ -2246,6 +2256,9 @@ section {
   #consultation-section .newsletter-email {
     margin-bottom: 0;
     margin-right: 17px;
+  }
+  #consultation-section .consultation__email {
+    font-size: 24px;
   }
   #consultation-section .consultation__news-letter .d-flex {
     display: -webkit-box;

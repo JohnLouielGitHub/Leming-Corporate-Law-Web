@@ -24,6 +24,12 @@ footer {
     height: 128px;
   }
 
+  .footer-logo:hover {
+    transition: 0.5s;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
   .icons {
     display: flex;
     margin-bottom: 74px;
@@ -38,7 +44,7 @@ footer {
     .social-icon {
       padding: 1rem;
       text-align: center;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 

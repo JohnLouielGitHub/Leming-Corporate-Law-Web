@@ -236,3 +236,9 @@
     height: auto;
   }
 }
+
+.scale:hover {
+  transition: 0.5s;
+  opacity: 1;
+  transform: scale(1.2);
+}

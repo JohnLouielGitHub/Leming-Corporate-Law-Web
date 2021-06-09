@@ -297,6 +297,14 @@ textarea {
   height: auto;
 }
 
+.scale:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -554,14 +562,9 @@ label {
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 5px #f4d5af;
-          box-shadow: inset 0 0 5px #f4d5af;
-}
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #33333380;
+  background: #333333;
   border-radius: 10px;
 }
 
@@ -882,7 +885,7 @@ header {
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #333333;
+  border-bottom: 3px solid #fff0dd;
 }
 
 header a {
@@ -972,6 +975,14 @@ footer .footer-logo {
   height: 128px;
 }
 
+footer .footer-logo:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 footer .icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -990,8 +1001,8 @@ footer .icons .footer-social-icon {
 footer .icons .social-icon {
   padding: 1rem;
   text-align: center;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer ul {
@@ -1050,6 +1061,14 @@ footer a:hover {
 
 .btn i {
   color: #fff;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
 }
 
 .btn-l {
@@ -1559,6 +1578,9 @@ section {
 }
 
 #hero-section .img-hero {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 330px;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -1625,12 +1647,6 @@ section {
 #about-section .hero__subtitle-description,
 #about-section .about__subtitle-description {
   margin-bottom: 2.125rem;
-}
-
-.img-hero {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 330px;
 }
 
 #quality-section {
@@ -1962,14 +1978,15 @@ section {
 
 #about-section .about__image-icon {
   top: 37px;
-  right: 18px;
+  right: -10px;
   max-width: 66px;
 }
 
 #about-section .about__image {
+  margin: 0 auto;
   padding-left: 8px;
   padding-right: 9px;
-  max-width: 325px;
+  max-width: 330px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1980,11 +1997,20 @@ section {
     top: 90px;
   }
   #about-section .about__image-block {
+    bottom: -30px;
+    left: -45px;
+  }
+  #about-section .about__image-icon {
+    right: -5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #about-section .about__image-block {
     max-width: 330px;
   }
   #about-section .about__image-icon {
     max-width: 330px;
-    right: 10px;
   }
   #about-section .about__image {
     max-width: 470px;
@@ -2186,6 +2212,7 @@ section {
 }
 
 #testimonial-section .testimonials-image {
+  margin: 0 auto;
   max-width: 330px;
   width: 100%;
   padding-top: 128px;
@@ -2223,20 +2250,50 @@ section {
   margin-bottom: 0.125rem;
 }
 
+#testimonial-section .testimonials-image-block {
+  max-width: 98px;
+  bottom: 58px;
+  left: -10px;
+}
+
+#testimonial-section .testimonials-image-icon {
+  max-width: 66px;
+  bottom: 352px;
+  right: -10px;
+}
+
+@media screen and (min-width: 576px) {
+  #testimonial-section .testimonials-image-block {
+    bottom: 64px;
+    left: 25px;
+  }
+  #testimonial-section .testimonials-image-icon {
+    right: 64px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #testimonial-section {
     margin-bottom: 208px;
   }
   #testimonial-section .testimonials-image {
-    max-width: 570px;
+    max-width: 470px;
     padding-top: 176px;
     margin-bottom: 0;
+  }
+  #testimonial-section .testimonials-image-block {
+    max-width: 330px;
+    bottom: 48px;
+    left: 10px;
+  }
+  #testimonial-section .testimonials-image-icon {
+    max-width: 330px;
+    right: 48px;
   }
   #testimonial-section .testimonials__heading {
     margin-bottom: 1.25rem;
   }
   #testimonial-section .testimonials__title-description {
-    max-width: 331px;
     margin-bottom: 1.75rem;
   }
   #testimonial-section .testimonials__subtitle-description {
@@ -2250,10 +2307,19 @@ section {
 }
 
 @media screen and (min-width: 992px) {
+  #testimonial-section .testimonials__title-description {
+    max-width: 331px;
+  }
+  #testimonial-section .testimonials-image-block {
+    left: -70px;
+  }
+  #testimonial-section .testimonials-image-icon {
+    right: -30px;
+  }
   #testimonial-section .testimonials-div {
-    max-width: 470px;
+    max-width: 570px;
     margin-left: 45px;
-    margin-top: 220px;
+    margin-top: 270px;
   }
   #testimonial-section .bg-testimonial {
     width: 50vw;

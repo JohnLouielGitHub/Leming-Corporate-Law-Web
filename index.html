@@ -104,14 +104,26 @@
                 data-aos-delay="70"
                 data-aos-duration="1200"
               ></div>
-              <img
-                class="img-hero"
-                data-aos="fade-down"
-                data-aos-delay="70"
-                data-aos-duration="1000"
-                src="./assets/img/hero-image.png"
-                alt="hero-image.png"
-              />
+              <div class="img-hero relative">
+                <img
+                  class="img-hero floating-1"
+                  data-aos="fade-down"
+                  data-aos-delay="70"
+                  data-aos-duration="1000"
+                  src="./assets/img/lawyer.png"
+                  alt="hero-image.png"
+                />
+                <img
+                  class="absolute img-hero-block floating-2"
+                  src="./assets/img/block.svg"
+                  alt="block.svg"
+                />
+                <img
+                  class="absolute img-hero-block-2 floating-3"
+                  src="./assets/img/icon.png"
+                  alt="icon.png"
+                />
+              </div>
             </div>
             <div
               class="column column-lg-6"
@@ -136,12 +148,12 @@
       <section id="quality-section" class="relative">
         <div class="bg-color-sc-1">
           <img
-            class="bg-circle-left"
+            class="bg-circle-left floating-4"
             src="./assets/img/circle-left.png"
             alt="circle-left.png"
           />
           <img
-            class="bg-circle-right"
+            class="bg-circle-right floating-4"
             src="./assets/img/circle-right.png"
             alt="circle-right.png"
           />
@@ -547,16 +559,18 @@
           data-aos-delay="70"
           data-aos-duration="1200"
         >
-          <img
-            class="bg-circle-left"
-            src="./assets/img/circle-left.png"
-            alt="circle-left.png"
-          />
-          <img
-            class="bg-circle-right"
-            src="./assets/img/circle-right.png"
-            alt="circle-right.png"
-          />
+          <div class="floating-1">
+            <img
+              class="bg-circle-left"
+              src="./assets/img/circle-left.png"
+              alt="circle-left.png"
+            />
+            <img
+              class="bg-circle-right"
+              src="./assets/img/circle-right.png"
+              alt="circle-right.png"
+            />
+          </div>
         </div>
         <div
           class="container bg-solid-color"
@@ -594,10 +608,16 @@
                 </form>
               </div>
             </div>
-            <div class="column column-lg-6 bg-solid-color">
+            <div class="column column-lg-6">
               <div class="column bg-color-1">
                 <div class="consultation__contact">
-                  <div class="consultation__contact-information-mobile d-flex">
+                  <div
+                    class="
+                      consultation__contact-information-mobile
+                      d-flex
+                      floating-5
+                    "
+                  >
                     <div class="icon">
                       <img
                         class="shape"
@@ -607,7 +627,9 @@
                     </div>
                     <div class="consultation-information-mobile">
                       <div class="consultation__phone-number heading-4">
-                        +1 (2345) 678-90-12
+                        <a href="tel:+1 (2345) 678-90-12"
+                          >+1 (2345) 678-90-12</a
+                        >
                       </div>
                       <div class="text__gray">
                         This is our contact number for our mobile or landline
@@ -616,7 +638,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="consultation__contact-information-mail d-flex">
+                  <div
+                    class="
+                      consultation__contact-information-mail
+                      d-flex
+                      floating-5
+                    "
+                  >
                     <div class="icon">
                       <img
                         class="shape"
@@ -626,7 +654,9 @@
                     </div>
                     <div class="consultation-information-email">
                       <div class="consultation__email">
-                        lemingcorporatelaw@company.com
+                        <a href="mailto:tamargo.louiel@gmail.com"
+                          >lemingcorporatelaw@company.com</a
+                        >
                       </div>
                       <div class="text__gray">
                         Company email just send an email to us.
@@ -636,7 +666,7 @@
                 </div>
               </div>
               <div class="column bg-color-2">
-                <div class="consultation__news-letter">
+                <div class="consultation__news-letter h-100">
                   <div class="consultation__newsletter-head heading-4">
                     News Letter
                   </div>
@@ -754,7 +784,7 @@
                 </a>
               </div>
               <div class="icons">
-                <div class="footer-social-icon text-center">
+                <div class="footer-social-icon text-center floating-5">
                   <a href="https://www.facebook.com/">
                     <img
                       class="social-icon"
@@ -762,7 +792,7 @@
                       alt="Facebook-icon.png"
                   /></a>
                 </div>
-                <div class="footer-social-icon text-center">
+                <div class="footer-social-icon text-center floating-5">
                   <a href="https://twitter.com/home">
                     <img
                       class="social-icon"
@@ -771,7 +801,7 @@
                     />
                   </a>
                 </div>
-                <div class="footer-social-icon text-center">
+                <div class="footer-social-icon text-center floating-5">
                   <a href="https://www.instagram.com/accounts/login/">
                     <img
                       class="social-icon"

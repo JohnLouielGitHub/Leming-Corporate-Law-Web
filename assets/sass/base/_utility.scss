@@ -6,6 +6,10 @@
   padding: 0 0;
 }
 
+.h-100 {
+  height: 100%;
+}
+
 .d-flex {
   display: flex;
 }
@@ -176,4 +180,49 @@
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
   background: $color-primary;
+}
+
+.floating-1 {
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+  img {
+    height: auto;
+  }
+}
+
+.floating-2 {
+  transform: translatey(0px);
+  animation: float 7s ease-in-out infinite;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.floating-3 {
+  transform: translatey(0px);
+  animation: float 5s ease-in-out infinite;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.floating-4 {
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.stories__content:hover,
+.floating-5:hover {
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }

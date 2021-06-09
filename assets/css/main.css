@@ -229,8 +229,8 @@ textarea {
 .floating-1 {
   -webkit-transform: translatey(0px);
           transform: translatey(0px);
-  -webkit-animation: float 2s ease-in-out infinite;
-          animation: float 2s ease-in-out infinite;
+  -webkit-animation: float 5s ease-in-out infinite;
+          animation: float 5s ease-in-out infinite;
 }
 
 .floating-1 img {
@@ -273,7 +273,18 @@ textarea {
   height: auto;
 }
 
-.stories__content:hover,
+.story-card:hover .stories__content {
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: float 2s ease-in-out infinite;
+          animation: float 2s ease-in-out infinite;
+}
+
+.story-card:hover .stories__content img {
+  width: 100%;
+  height: auto;
+}
+
 .floating-5:hover {
   -webkit-transform: translatey(0px);
           transform: translatey(0px);
@@ -281,7 +292,6 @@ textarea {
           animation: float 2s ease-in-out infinite;
 }
 
-.stories__content:hover img,
 .floating-5:hover img {
   width: 100%;
   height: auto;
@@ -1944,7 +1954,21 @@ section {
   padding-top: 60px;
 }
 
+#about-section .about__image-block {
+  bottom: -30px;
+  left: -10px;
+  max-width: 98px;
+}
+
+#about-section .about__image-icon {
+  top: 37px;
+  right: 18px;
+  max-width: 66px;
+}
+
 #about-section .about__image {
+  padding-left: 8px;
+  padding-right: 9px;
   max-width: 325px;
   width: 100%;
   -o-object-fit: cover;
@@ -1955,14 +1979,15 @@ section {
   #about-section .bg-solid-color {
     top: 90px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  #about-section .bg-solid-color {
-    top: 136px;
+  #about-section .about__image-block {
+    max-width: 330px;
+  }
+  #about-section .about__image-icon {
+    max-width: 330px;
+    right: 10px;
   }
   #about-section .about__image {
-    max-width: 570px;
+    max-width: 470px;
   }
 }
 

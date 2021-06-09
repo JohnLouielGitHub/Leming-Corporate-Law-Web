@@ -184,7 +184,7 @@
 
 .floating-1 {
   transform: translatey(0px);
-  animation: float 2s ease-in-out infinite;
+  animation: float 5s ease-in-out infinite;
   img {
     height: auto;
   }
@@ -217,7 +217,17 @@
   }
 }
 
-.stories__content:hover,
+.story-card:hover {
+  .stories__content {
+    transform: translatey(0px);
+    animation: float 2s ease-in-out infinite;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 .floating-5:hover {
   transform: translatey(0px);
   animation: float 2s ease-in-out infinite;

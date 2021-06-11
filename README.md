@@ -30,11 +30,11 @@ https://johnlouielgithub.github.io/Leming-Corporate-Law-Web/
 ## 🚀 Languages and Tools Used:
 
 <p align="left"> 
-    <a> <img src="https://img.icons8.com/color/48/000000/javascript.png"style="width:60px; height:60px;"/> </a> 
-    <a> <img src="https://img.icons8.com/color/48/000000/html-5.png"style="width:60px; height:60px;"/> </a> 
-    <a> <img src="https://img.icons8.com/color/48/000000/css3.png"style="width:60px; height:60px;"/> </a>
-    <a> <img src="https://img.icons8.com/color/48/000000/git.png"style="width:60px; height:60px;"/> </a> 
-    <a> <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/envato-512.png"style="width:60px; height:60px"/> </a> 
+    <a> <img src="https://img.icons8.com/color/48/000000/javascript.png" height="50px" width="60px"/> </a> 
+    <a> <img src="https://img.icons8.com/color/48/000000/html-5.png" height="50px" width="60px"/> </a> 
+    <a> <img src="https://img.icons8.com/color/48/000000/css3.png" height="50px" width="60px"/> </a>
+    <a> <img src="https://img.icons8.com/color/48/000000/git.png" height="50px" width="60px"/> </a> 
+    <a> <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/envato-512.png" height="50px" width="60px"/> </a> 
     <a> <img src="https://cdn.iconscout.com/icon/free/png-512/figma-682083.png"  height="50px" width="60px"/> </a> 
         <a> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"  height="50px" width="60px"/> </a> 
     

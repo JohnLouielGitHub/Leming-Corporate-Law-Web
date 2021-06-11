@@ -2107,6 +2107,8 @@ section {
   height: 100%;
   margin-bottom: 239px;
   border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #stories-section .stories__content {

@@ -12,7 +12,7 @@ https://johnlouielgithub.github.io/Leming-Corporate-Law-Web/
   <img width="100%" src="https://github.com/JohnLouielGitHub/Leming-Corporate-Law-Web/blob/main/readmeAssets/leming-devices.gif?raw=true">
 </p>
 
-## 🙋‍♂️ AboutThe Project
+## 🙋‍♂️ About The Project
 
 
 

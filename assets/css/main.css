@@ -8,6 +8,10 @@
   padding-left: 24px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input,
 textarea {
   font-size: 1rem;
